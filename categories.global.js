@@ -1,71 +1,139 @@
 // Elementkatalog
 const ELEMENT_CATEGORIES = {
     "[2] Gebäude": {
-        Stellwerk_1: {
-            type: "image",
-            src: "2_Gebaeude/SW_mech.png",
-            phaseSrc: {
-                IST: "2_Gebaeude/SW_mech.png",
-                NEUBAU: "2_Gebaeude/SW_mech_N.png",
-                RUECKBAU: "2_Gebaeude/SW_mech_R.png"
+        type: "nested",
+        subcategories: {
+            Stellwerk: {
+                Stellwerk_1: {
+                    type: "image",
+                    src: "2_Gebaeude/Stellwerk/SW_mech.png",
+                    phaseSrc: {
+                        IST: "2_Gebaeude/Stellwerk/SW_mech.png",
+                        NEUBAU: "2_Gebaeude/Stellwerk/SW_mech_N.png",
+                        RUECKBAU: "2_Gebaeude/Stellwerk/SW_mech_R.png"
+                    },
+                    widthCM: 1,
+                    heightCM: 0.5,
+                },
+                Stellwerk_2: {
+                    type: "image",
+                    src: "2_Gebaeude/Stellwerk/SW_elek.png",
+                    phaseSrc: {
+                        IST: "2_Gebaeude/Stellwerk/SW_elek.png",
+                        NEUBAU: "2_Gebaeude/Stellwerk/SW_elek_N.png",
+                        RUECKBAU: "2_Gebaeude/Stellwerk/SW_elek_R.png"
+                    },
+                    widthCM: 1,
+                    heightCM: 0.5,
+                },
+                Stellwerk_3: {
+                    type: "image",
+                    src: "2_Gebaeude/Stellwerk/ESTW_Z.png",
+                    phaseSrc: {
+                        IST: "2_Gebaeude/Stellwerk/ESTW_Z.png",
+                        NEUBAU: "2_Gebaeude/Stellwerk/ESTW_Z_N.png",
+                        RUECKBAU: "2_Gebaeude/Stellwerk/ESTW_Z_R.png"
+                    },
+                    widthCM: 1,
+                    heightCM: 0.5,
+                },
+                Stellwerk_4: {
+                    type: "image",
+                    src: "2_Gebaeude/Stellwerk/ESTW_UZ.png",
+                    phaseSrc: {
+                        IST: "2_Gebaeude/Stellwerk/ESTW_UZ.png",
+                        NEUBAU: "2_Gebaeude/Stellwerk/ESTW_UZ_N.png",
+                        RUECKBAU: "2_Gebaeude/Stellwerk/ESTW_UZ_R.png"
+                    },
+                    widthCM: 1,
+                    heightCM: 0.5,
+                },
+                Stellwerk_5: {
+                    type: "image",
+                    src: "2_Gebaeude/Stellwerk/ESTW_A.png",
+                    phaseSrc: {
+                        IST: "2_Gebaeude/Stellwerk/ESTW_A.png",
+                        NEUBAU: "2_Gebaeude/Stellwerk/ESTW_A_N.png",
+                        RUECKBAU: "2_Gebaeude/Stellwerk/ESTW_A_R.png"
+                    },
+                    widthCM: 1,
+                    heightCM: 0.5,
+                },
             },
-            widthCM: 1,
-            heightCM: 0.5,
-        },
-        Stellwerk_2: {
-            type: "image",
-            src: "2_Gebaeude/SW_elek.png",
-            phaseSrc: {
-                IST: "2_Gebaeude/SW_elek.png",
-                NEUBAU: "2_Gebaeude/SW_elek_N.png",
-                RUECKBAU: "2_Gebaeude/SW_elek_R.png"
+            Gebäude: {
+                Gebaude: {
+                    type: "image",
+                    src: "2_Gebaeude/Gebaeude/Gebaude.png",
+                    phaseSrc: {
+                        IST: "2_Gebaeude/Gebaeude/Gebaude.png",
+                        NEUBAU: "2_Gebaeude/Gebaeude/Gebaude_N.png",
+                        RUECKBAU: "2_Gebaeude/Gebaeude/Gebaude_R.png"
+                    },
+                    widthCM: 1,
+                    heightCM: 0.5,
+                },
             },
-            widthCM: 1,
-            heightCM: 0.5,
-        },
-        Stellwerk_3: {
-            type: "image",
-            src: "2_Gebaeude/ESTW_Z.png",
-            phaseSrc: {
-                IST: "2_Gebaeude/ESTW_Z.png",
-                NEUBAU: "2_Gebaeude/ESTW_Z_N.png",
-                RUECKBAU: "2_Gebaeude/ESTW_Z_R.png"
+            Signalbrücke: {
+                SignalbrueckeEnde: {
+                    type: "image",
+                    src: "2_Gebaeude/Signalbruecke/SignalbrueckeEnde.png",
+                    phaseSrc: {
+                        IST: "2_Gebaeude/Signalbruecke/SignalbrueckeEnde.png",
+                        NEUBAU: "2_Gebaeude/Signalbruecke/SignalbrueckeEnde_N.png",
+                        RUECKBAU: "2_Gebaeude/Signalbruecke/SignalbrueckeEnde_R.png"
+                    },
+                    widthCM: 0.25,
+                    heightCM: 0.5,
+                },
+                SignalbrueckeMitte: {
+                    type: "image",
+                    src: "2_Gebaeude/Signalbruecke/SignalbrueckeMitte.png",
+                    phaseSrc: {
+                        IST: "2_Gebaeude/Signalbruecke/SignalbrueckeMitte.png",
+                        NEUBAU: "2_Gebaeude/Signalbruecke/SignalbrueckeMitte_N.png",
+                        RUECKBAU: "2_Gebaeude/Signalbruecke/SignalbrueckeMitte_R.png"
+                    },
+                    widthCM: 0.25,
+                    heightCM: 0.5,
+                },
+                SignalbrueckeFundament: {
+                    type: "image",
+                    src: "2_Gebaeude/Signalbruecke/SignalbrueckeFundament.png",
+                    phaseSrc: {
+                        IST: "2_Gebaeude/Signalbruecke/SignalbrueckeFundament.png",
+                        NEUBAU: "2_Gebaeude/Signalbruecke/SignalbrueckeFundament_N.png",
+                        RUECKBAU: "2_Gebaeude/Signalbruecke/SignalbrueckeFundament_R.png"
+                    },
+                    widthCM: 0.25,
+                    heightCM: 0.1,
+                },
             },
-            widthCM: 1,
-            heightCM: 0.5,
-        },
-        Stellwerk_4: {
-            type: "image",
-            src: "2_Gebaeude/ESTW_UZ.png",
-            phaseSrc: {
-                IST: "2_Gebaeude/ESTW_UZ.png",
-                NEUBAU: "2_Gebaeude/ESTW_UZ_N.png",
-                RUECKBAU: "2_Gebaeude/ESTW_UZ_R.png"
+            Bedieneinrichtungen: {
+                Gebaude: {
+                    type: "image",
+                    src: "2_Gebaeude/Gebaeude/Gebaude.png",
+                    phaseSrc: {
+                        IST: "2_Gebaeude/Gebaeude/Gebaude.png",
+                        NEUBAU: "2_Gebaeude/Gebaeude/Gebaude_N.png",
+                        RUECKBAU: "2_Gebaeude/Gebaeude/Gebaude_R.png"
+                    },
+                    widthCM: 1,
+                    heightCM: 0.5,
+                },
             },
-            widthCM: 1,
-            heightCM: 0.5,
-        },
-        Stellwerk_5: {
-            type: "image",
-            src: "2_Gebaeude/ESTW_A.png",
-            phaseSrc: {
-                IST: "2_Gebaeude/ESTW_A.png",
-                NEUBAU: "2_Gebaeude/ESTW_A_N.png",
-                RUECKBAU: "2_Gebaeude/ESTW_A_R.png"
+            Schlüsselsperren: {
+                Gebaude: {
+                    type: "image",
+                    src: "2_Gebaeude/Gebaeude/Gebaude.png",
+                    phaseSrc: {
+                        IST: "2_Gebaeude/Gebaeude/Gebaude.png",
+                        NEUBAU: "2_Gebaeude/Gebaeude/Gebaude_N.png",
+                        RUECKBAU: "2_Gebaeude/Gebaeude/Gebaude_R.png"
+                    },
+                    widthCM: 1,
+                    heightCM: 0.5,
+                },
             },
-            widthCM: 1,
-            heightCM: 0.5,
-        },
-        Gebaude: {
-            type: "image",
-            src: "2_Gebaeude/Gebaude.png",
-            phaseSrc: {
-                IST: "2_Gebaeude/Gebaude.png",
-                NEUBAU: "2_Gebaeude/Gebaude_N.png",
-                RUECKBAU: "2_Gebaeude/Gebaude_R.png"
-            },
-            widthCM: 1,
-            heightCM: 0.5,
         },
     },
     "[3] W|Kr|Kw|GSP": {
@@ -759,11 +827,11 @@ const ELEMENT_CATEGORIES = {
 
                 signal_MSig1: {
                     type: "image",
-                    src: "4_MSig/MSig1.png",
+                    src: "4_Haupt_und_Vorsignale/MSig/MSig1.png",
                     phaseSrc: {
-                        IST: "4_MSig/MSig1.png",
-                        NEUBAU: "4_MSig/MSig1_N.png",
-                        RUECKBAU: "4_MSig/MSig1_R.png"
+                        IST: "4_Haupt_und_Vorsignale/MSig/MSig1.png",
+                        NEUBAU: "4_Haupt_und_Vorsignale/MSig/MSig1_N.png",
+                        RUECKBAU: "4_Haupt_und_Vorsignale/MSig/MSig1_R.png"
                     },
                     widthCM: 0.33,
                     heightCM: 0.2,
@@ -776,11 +844,11 @@ const ELEMENT_CATEGORIES = {
 
                 signal_MSig2: {
                     type: "image",
-                    src: "4_MSig/MSig2.png",
+                    src: "4_Haupt_und_Vorsignale/MSig/MSig2.png",
                     phaseSrc: {
-                        IST: "4_MSig/MSig2.png",
-                        NEUBAU: "4_MSig/MSig2_N.png",
-                        RUECKBAU: "4_MSig/MSig2_R.png"
+                        IST: "4_Haupt_und_Vorsignale/MSig/MSig2.png",
+                        NEUBAU: "4_Haupt_und_Vorsignale/MSig/MSig2_N.png",
+                        RUECKBAU: "4_Haupt_und_Vorsignale/MSig/MSig2_R.png"
                     },
                     widthCM: 0.33,
                     heightCM: 0.2,
@@ -788,33 +856,33 @@ const ELEMENT_CATEGORIES = {
 
                 signal_MSig3: {
                     type: "image",
-                    src: "4_MSig/MSig3.png",
+                    src: "4_Haupt_und_Vorsignale/MSig/MSig3.png",
                     phaseSrc: {
-                        IST: "4_MSig/MSig3.png",
-                        NEUBAU: "4_MSig/MSig3_N.png",
-                        RUECKBAU: "4_MSig/MSig3_R.png"
+                        IST: "4_Haupt_und_Vorsignale/MSig/MSig3.png",
+                        NEUBAU: "4_Haupt_und_Vorsignale/MSig/MSig3_N.png",
+                        RUECKBAU: "4_Haupt_und_Vorsignale/MSig/MSig3_R.png"
                     },
                     widthCM: 0.33,
                     heightCM: 0.2,
                 },
                 Zusatzlicht1: {
                     type: "image",
-                    src: "4_MSig/Zusatzlicht.png",
+                    src: "4_Haupt_und_Vorsignale/MSig/Zusatzlicht.png",
                     phaseSrc: {
-                        IST: "4_MSig/Zusatzlicht.png",
-                        NEUBAU: "4_MSig/Zusatzlicht_N.png",
-                        RUECKBAU: "4_MSig/Zusatzlicht_R.png"
+                        IST: "4_Haupt_und_Vorsignale/MSig/Zusatzlicht.png",
+                        NEUBAU: "4_Haupt_und_Vorsignale/MSig/Zusatzlicht_N.png",
+                        RUECKBAU: "4_Haupt_und_Vorsignale/MSig/Zusatzlicht_R.png"
                     },
                     widthCM: 0.25,
                     heightCM: 0.2,
                 },
                 signal_Ra12: {
                     type: "image",
-                    src: "4_MSig/Ra12.png",
+                    src: "4_Haupt_und_Vorsignale/MSig/Ra12.png",
                     phaseSrc: {
-                        IST: "4_MSig/Ra12.png",
-                        NEUBAU: "4_MSig/Ra12_N.png",
-                        RUECKBAU: "4_MSig/Ra12_R.png"
+                        IST: "4_Haupt_und_Vorsignale/MSig/Ra12.png",
+                        NEUBAU: "4_Haupt_und_Vorsignale/MSig/Ra12_N.png",
+                        RUECKBAU: "4_Haupt_und_Vorsignale/MSig/Ra12_R.png"
                     },
                     widthCM: 0.1675,
                     heightCM: 0.2,
@@ -826,11 +894,11 @@ const ELEMENT_CATEGORIES = {
 
                 signal_HSig1: {
                     type: "image",
-                    src: "4_HSig/HSig1.png",
+                    src: "4_Haupt_und_Vorsignale/HSig/HSig1.png",
                     phaseSrc: {
-                        IST: "4_HSig/HSig1.png",
-                        NEUBAU: "4_HSig/HSig1_N.png",
-                        RUECKBAU: "4_HSig/HSig1_R.png"
+                        IST: "4_Haupt_und_Vorsignale/HSig/HSig1.png",
+                        NEUBAU: "4_Haupt_und_Vorsignale/HSig/HSig1_N.png",
+                        RUECKBAU: "4_Haupt_und_Vorsignale/HSig/HSig1_R.png"
                     },
                     widthCM: 0.25,
                     heightCM: 0.2,
@@ -838,11 +906,11 @@ const ELEMENT_CATEGORIES = {
 
                 signal_HSig2: {
                     type: "image",
-                    src: "4_HSig/HSig2.png",
+                    src: "4_Haupt_und_Vorsignale/HSig/HSig2.png",
                     phaseSrc: {
-                        IST: "4_HSig/HSig2.png",
-                        NEUBAU: "4_HSig/HSig2_N.png",
-                        RUECKBAU: "4_HSig/HSig2_R.png"
+                        IST: "4_Haupt_und_Vorsignale/HSig/HSig2.png",
+                        NEUBAU: "4_Haupt_und_Vorsignale/HSig/HSig2_N.png",
+                        RUECKBAU: "4_Haupt_und_Vorsignale/HSig/HSig2_R.png"
                     },
                     widthCM: 0.25,
                     heightCM: 0.2,
@@ -850,22 +918,22 @@ const ELEMENT_CATEGORIES = {
 
                 signal_HSig3: {
                     type: "image",
-                    src: "4_HSig/HSig3.png",
+                    src: "4_Haupt_und_Vorsignale/HSig/HSig3.png",
                     phaseSrc: {
-                        IST: "4_HSig/HSig3.png",
-                        NEUBAU: "4_HSig/HSig3_N.png",
-                        RUECKBAU: "4_HSig/HSig3_R.png"
+                        IST: "4_Haupt_und_Vorsignale/HSig/HSig3.png",
+                        NEUBAU: "4_Haupt_und_Vorsignale/HSig/HSig3_N.png",
+                        RUECKBAU: "4_Haupt_und_Vorsignale/HSig/HSig3_R.png"
                     },
                     widthCM: 0.25,
                     heightCM: 0.2,
                 },
                 Zusatzlicht2: {
                     type: "image",
-                    src: "4_HSig/Zusatzlicht.png",
+                    src: "4_Haupt_und_Vorsignale/HSig/Zusatzlicht.png",
                     phaseSrc: {
-                        IST: "4_HSig/Zusatzlicht.png",
-                        NEUBAU: "4_HSig/Zusatzlicht_N.png",
-                        RUECKBAU: "4_HSig/Zusatzlicht_R.png"
+                        IST: "4_Haupt_und_Vorsignale/HSig/Zusatzlicht.png",
+                        NEUBAU: "4_Haupt_und_Vorsignale/HSig/Zusatzlicht_N.png",
+                        RUECKBAU: "4_Haupt_und_Vorsignale/HSig/Zusatzlicht_R.png"
                     },
                     widthCM: 0.25,
                     heightCM: 0.2,
@@ -877,11 +945,11 @@ const ELEMENT_CATEGORIES = {
 
                 signal_VSig1: {
                     type: "image",
-                    src: "4_VSig/VSig1.png",
+                    src: "4_Haupt_und_Vorsignale/VSig/VSig1.png",
                     phaseSrc: {
-                        IST: "4_VSig/VSig1.png",
-                        NEUBAU: "4_VSig/VSig1_N.png",
-                        RUECKBAU: "4_VSig/VSig1_R.png"
+                        IST: "4_Haupt_und_Vorsignale/VSig/VSig1.png",
+                        NEUBAU: "4_Haupt_und_Vorsignale/VSig/VSig1_N.png",
+                        RUECKBAU: "4_Haupt_und_Vorsignale/VSig/VSig1_R.png"
                     },
                     widthCM: 0.25,
                     heightCM: 0.2,
@@ -889,11 +957,11 @@ const ELEMENT_CATEGORIES = {
 
                 signal_VSig2: {
                     type: "image",
-                    src: "4_VSig/VSig2.png",
+                    src: "4_Haupt_und_Vorsignale/VSig/VSig2.png",
                     phaseSrc: {
-                        IST: "4_VSig/VSig2.png",
-                        NEUBAU: "4_VSig/VSig2_N.png",
-                        RUECKBAU: "4_VSig/VSig2_R.png"
+                        IST: "4_Haupt_und_Vorsignale/VSig/VSig2.png",
+                        NEUBAU: "4_Haupt_und_Vorsignale/VSig/VSig2_N.png",
+                        RUECKBAU: "4_Haupt_und_Vorsignale/VSig/VSig2_R.png"
                     },
                     widthCM: 0.25,
                     heightCM: 0.2,
@@ -901,11 +969,11 @@ const ELEMENT_CATEGORIES = {
 
                 signal_VSig3: {
                     type: "image",
-                    src: "4_VSig/VSig3.png",
+                    src: "4_Haupt_und_Vorsignale/VSig/VSig3.png",
                     phaseSrc: {
-                        IST: "4_VSig/VSig3.png",
-                        NEUBAU: "4_VSig/VSig3_N.png",
-                        RUECKBAU: "4_VSig/VSig3_R.png"
+                        IST: "4_Haupt_und_Vorsignale/VSig/VSig3.png",
+                        NEUBAU: "4_Haupt_und_Vorsignale/VSig/VSig3_N.png",
+                        RUECKBAU: "4_Haupt_und_Vorsignale/VSig/VSig3_R.png"
                     },
                     widthCM: 0.25,
                     heightCM: 0.2,
@@ -990,42 +1058,6 @@ const ELEMENT_CATEGORIES = {
                     widthCM: 0.25,
                     heightCM: 0.1,
                 },
-            },
-            Signalbrücke: {
-                SignalbrueckeEnde: {
-                    type: "image",
-                    src: "2_Signalbruecke/SignalbrueckeEnde.png",
-                    phaseSrc: {
-                        IST: "2_Signalbruecke/SignalbrueckeEnde.png",
-                        NEUBAU: "2_Signalbruecke/SignalbrueckeEnde_N.png",
-                        RUECKBAU: "2_Signalbruecke/SignalbrueckeEnde_R.png"
-                    },
-                    widthCM: 0.25,
-                    heightCM: 0.5,
-                },
-                SignalbrueckeMitte: {
-                    type: "image",
-                    src: "2_Signalbruecke/SignalbrueckeMitte.png",
-                    phaseSrc: {
-                        IST: "2_Signalbruecke/SignalbrueckeMitte.png",
-                        NEUBAU: "2_Signalbruecke/SignalbrueckeMitte_N.png",
-                        RUECKBAU: "2_Signalbruecke/SignalbrueckeMitte_R.png"
-                    },
-                    widthCM: 0.25,
-                    heightCM: 0.5,
-                },
-                SignalbrueckeFundament: {
-                    type: "image",
-                    src: "2_Signalbruecke/SignalbrueckeFundament.png",
-                    phaseSrc: {
-                        IST: "2_Signalbruecke/SignalbrueckeFundament.png",
-                        NEUBAU: "2_Signalbruecke/SignalbrueckeFundament_N.png",
-                        RUECKBAU: "2_Signalbruecke/SignalbrueckeFundament_R.png"
-                    },
-                    widthCM: 0.25,
-                    heightCM: 0.1,
-                },
-
             },
         },
     },
@@ -1145,6 +1177,17 @@ const ELEMENT_CATEGORIES = {
                 IST: "5_Zs/Zs13bl.png",
                 NEUBAU: "5_Zs/Zs13bl_N.png",
                 RUECKBAU: "5_Zs/Zs13bl_R.png"
+            },
+            widthCM: 0.1675,
+            heightCM: 0.2,
+        },
+        signal_MTafel: {
+            type: "image",
+            src: "5_Zs/MTafel.png",
+            phaseSrc: {
+                IST: "5_Zs/MTafel.png",
+                NEUBAU: "5_Zs/MTafel_N.png",
+                RUECKBAU: "5_Zs/MTafel_R.png"
             },
             widthCM: 0.1675,
             heightCM: 0.2,
@@ -2459,8 +2502,9 @@ const ELEMENT_CATEGORIES = {
         signal_Ne32: { type: "image", src: "8_Ne/Ne32.png", phaseSrc: { IST: "8_Ne/Ne32.png", NEUBAU: "8_Ne/Ne32_N.png", RUECKBAU: "8_Ne/Ne32_R.png" }, widthCM: 0.5, heightCM: 0.2 },
         signal_Ne33: { type: "image", src: "8_Ne/Ne33.png", phaseSrc: { IST: "8_Ne/Ne33.png", NEUBAU: "8_Ne/Ne33_N.png", RUECKBAU: "8_Ne/Ne33_R.png" }, widthCM: 0.5, heightCM: 0.2 },
         signal_Ne34: { type: "image", src: "8_Ne/Ne34.png", phaseSrc: { IST: "8_Ne/Ne34.png", NEUBAU: "8_Ne/Ne34_N.png", RUECKBAU: "8_Ne/Ne34_R.png" }, widthCM: 0.5, heightCM: 0.2 },
-        signal_Ne35: { type: "image", src: "8_Ne/Ne35.png", phaseSrc: { IST: "8_Ne/Ne35.png", NEUBAU: "8_Ne/Ne35_N.png", RUECKBAU: "8_Ne/Ne35_R.png" }, widthCM: 0.5, heightCM: 0.2 }
-
+        signal_Ne35: { type: "image", src: "8_Ne/Ne35.png", phaseSrc: { IST: "8_Ne/Ne35.png", NEUBAU: "8_Ne/Ne35_N.png", RUECKBAU: "8_Ne/Ne35_R.png" }, widthCM: 0.5, heightCM: 0.2 },
+        ETCS_Stop_Maker_1: { type: "image", src: "8_Ne/ETCS_Stop_Maker_1.png", phaseSrc: { IST: "8_Ne/ETCS_Stop_Maker_1.png", NEUBAU: "8_Ne/ETCS_Stop_Maker_1_N.png", RUECKBAU: "8_Ne/ETCS_Stop_Maker_1_R.png" }, widthCM: 0.5, heightCM: 0.2 },
+        ETCS_Stop_Maker_2: { type: "image", src: "8_Ne/ETCS_Stop_Maker_2.png", phaseSrc: { IST: "8_Ne/ETCS_Stop_Maker_2.png", NEUBAU: "8_Ne/ETCS_Stop_Maker_2_N.png", RUECKBAU: "8_Ne/ETCS_Stop_Maker_2_R.png" }, widthCM: 0.5, heightCM: 0.2 },
 
     },
     "[9] Orientierungszeichen": {
@@ -2498,66 +2542,225 @@ const ELEMENT_CATEGORIES = {
 
     },
     "[12] Gleiskennzeichnungen": {
-        E_Ende: { type: "image", src: "12_Gleiskennzeichnungen/E_Ende.png", phaseSrc: { IST: "12_Gleiskennzeichnungen/E_Ende.png", NEUBAU: "12_Gleiskennzeichnungen/E_Ende_N.png", RUECKBAU: "12_Gleiskennzeichnungen/E_Ende_R.png" }, widthCM: 0.1666, heightCM: 0.4 },
+        type: "nested",
+        subcategories: {
+            elek_Ende: {
+                E_Ende: {
+                    type: "image",
+                    src: "12_Gleiskennzeichnungen/E_Ende.png",
+                    phaseSrc: {
+                        IST: "12_Gleiskennzeichnungen/E_Ende.png",
+                        NEUBAU: "12_Gleiskennzeichnungen/E_Ende_N.png",
+                        RUECKBAU: "12_Gleiskennzeichnungen/E_Ende_R.png"
+                    },
+                    widthCM: 0.1666,
+                    heightCM: 0.4
+                },
+            },
+            Kilometrierung: {
 
-        Gleisabschluss: { type: "image", src: "12_Gleiskennzeichnungen/Gleisabschluss.png", phaseSrc: { IST: "12_Gleiskennzeichnungen/Gleisabschluss.png", NEUBAU: "12_Gleiskennzeichnungen/Gleisabschluss_N.png", RUECKBAU: "12_Gleiskennzeichnungen/Gleisabschluss_R.png" }, widthCM: 0.5, heightCM: 0.4 },
+                hm: {
+                    type: "image",
+                    src: "12_Gleiskennzeichnungen/hm.png",
+                    phaseSrc: {
+                        IST: "12_Gleiskennzeichnungen/hm.png",
+                        NEUBAU: "12_Gleiskennzeichnungen/hm_N.png",
+                        RUECKBAU: "12_Gleiskennzeichnungen/hm_R.png"
+                    },
+                    widthCM: 0.25,
+                    heightCM: 0.2
+                },
 
-        hm: { type: "image", src: "12_Gleiskennzeichnungen/hm.png", phaseSrc: { IST: "12_Gleiskennzeichnungen/hm.png", NEUBAU: "12_Gleiskennzeichnungen/hm_N.png", RUECKBAU: "12_Gleiskennzeichnungen/hm_R.png" }, widthCM: 0.25, heightCM: 0.2 },
+                km: {
+                    type: "image",
+                    src: "12_Gleiskennzeichnungen/km.png",
+                    phaseSrc: {
+                        IST: "12_Gleiskennzeichnungen/km.png",
+                        NEUBAU: "12_Gleiskennzeichnungen/km_N.png",
+                        RUECKBAU: "12_Gleiskennzeichnungen/km_R.png"
+                    },
+                    widthCM: 0.25,
+                    heightCM: 0.2
+                },
+            },
+            Gleisabschlüsse: {
+                Gleisabschluss: {
+                    type: "image",
+                    src: "12_Gleiskennzeichnungen/Gleisabschluss.png",
+                    phaseSrc: {
+                        IST: "12_Gleiskennzeichnungen/Gleisabschluss.png",
+                        NEUBAU: "12_Gleiskennzeichnungen/Gleisabschluss_N.png",
+                        RUECKBAU: "12_Gleiskennzeichnungen/Gleisabschluss_R.png"
+                    },
+                    widthCM: 0.5,
+                    heightCM: 0.4
+                },
 
-        km: { type: "image", src: "12_Gleiskennzeichnungen/km.png", phaseSrc: { IST: "12_Gleiskennzeichnungen/km.png", NEUBAU: "12_Gleiskennzeichnungen/km_N.png", RUECKBAU: "12_Gleiskennzeichnungen/km_R.png" }, widthCM: 0.25, heightCM: 0.2 },
+                Prellbock: {
+                    type: "image",
+                    src: "12_Gleiskennzeichnungen/Prellbock.png",
+                    phaseSrc: {
+                        IST: "12_Gleiskennzeichnungen/Prellbock.png",
+                        NEUBAU: "12_Gleiskennzeichnungen/Prellbock_N.png",
+                        RUECKBAU: "12_Gleiskennzeichnungen/Prellbock_R.png"
+                    },
+                    widthCM: 0.1666,
+                    heightCM: 0.4
+                },
 
-        Prellbock: { type: "image", src: "12_Gleiskennzeichnungen/Prellbock.png", phaseSrc: { IST: "12_Gleiskennzeichnungen/Prellbock.png", NEUBAU: "12_Gleiskennzeichnungen/Prellbock_N.png", RUECKBAU: "12_Gleiskennzeichnungen/Prellbock_R.png" }, widthCM: 0.1666, heightCM: 0.4 },
+                Prellbock_beweg: {
+                    type: "image",
+                    src: "12_Gleiskennzeichnungen/Prellbock_beweg.png",
+                    phaseSrc: {
+                        IST: "12_Gleiskennzeichnungen/Prellbock_beweg.png",
+                        NEUBAU: "12_Gleiskennzeichnungen/Prellbock_beweg_N.png",
+                        RUECKBAU: "12_Gleiskennzeichnungen/Prellbock_beweg_R.png"
+                    },
+                    widthCM: 0.1666,
+                    heightCM: 0.4
+                },
 
-        Prellbock_beweg: { type: "image", src: "12_Gleiskennzeichnungen/Prellbock_beweg.png", phaseSrc: { IST: "12_Gleiskennzeichnungen/Prellbock_beweg.png", NEUBAU: "12_Gleiskennzeichnungen/Prellbock_beweg_N.png", RUECKBAU: "12_Gleiskennzeichnungen/Prellbock_beweg_R.png" }, widthCM: 0.1666, heightCM: 0.4 },
+                Schwellenkreuz: {
+                    type: "image",
+                    src: "12_Gleiskennzeichnungen/Schwellenkreuz.png",
+                    phaseSrc: {
+                        IST: "12_Gleiskennzeichnungen/Schwellenkreuz.png",
+                        NEUBAU: "12_Gleiskennzeichnungen/Schwellenkreuz_N.png",
+                        RUECKBAU: "12_Gleiskennzeichnungen/Schwellenkreuz_R.png"
+                    },
+                    widthCM: 0.1666,
+                    heightCM: 0.4
+                },
+            },
+            Verkehre: {
+                Verkehr1: {
+                    type: "image",
+                    src: "12_Gleiskennzeichnungen/Verkehr1.png",
+                    phaseSrc: {
+                        IST: "12_Gleiskennzeichnungen/Verkehr1.png",
+                        NEUBAU: "12_Gleiskennzeichnungen/Verkehr1_N.png",
+                        RUECKBAU: "12_Gleiskennzeichnungen/Verkehr1_R.png"
+                    },
+                    widthCM: 0.75,
+                    heightCM: 0.2
+                },
 
-        Schwellenkreuz: { type: "image", src: "12_Gleiskennzeichnungen/Schwellenkreuz.png", phaseSrc: { IST: "12_Gleiskennzeichnungen/Schwellenkreuz.png", NEUBAU: "12_Gleiskennzeichnungen/Schwellenkreuz_N.png", RUECKBAU: "12_Gleiskennzeichnungen/Schwellenkreuz_R.png" }, widthCM: 0.1666, heightCM: 0.4 },
+                Verkehr2: {
+                    type: "image",
+                    src: "12_Gleiskennzeichnungen/Verkehr2.png",
+                    phaseSrc: {
+                        IST: "12_Gleiskennzeichnungen/Verkehr2.png",
+                        NEUBAU: "12_Gleiskennzeichnungen/Verkehr2_N.png",
+                        RUECKBAU: "12_Gleiskennzeichnungen/Verkehr2_R.png"
+                    },
+                    widthCM: 0.75,
+                    heightCM: 0.2
+                },
 
-        Verkehr1: { type: "image", src: "12_Gleiskennzeichnungen/Verkehr1.png", phaseSrc: { IST: "12_Gleiskennzeichnungen/Verkehr1.png", NEUBAU: "12_Gleiskennzeichnungen/Verkehr1_N.png", RUECKBAU: "12_Gleiskennzeichnungen/Verkehr1_R.png" }, widthCM: 0.75, heightCM: 0.2 },
+                Verkehr3: {
+                    type: "image",
+                    src: "12_Gleiskennzeichnungen/Verkehr3.png",
+                    phaseSrc: {
+                        IST: "12_Gleiskennzeichnungen/Verkehr3.png",
+                        NEUBAU: "12_Gleiskennzeichnungen/Verkehr3_N.png",
+                        RUECKBAU: "12_Gleiskennzeichnungen/Verkehr3_R.png"
+                    },
+                    widthCM: 0.75,
+                    heightCM: 0.2
+                },
 
-        Verkehr2: { type: "image", src: "12_Gleiskennzeichnungen/Verkehr2.png", phaseSrc: { IST: "12_Gleiskennzeichnungen/Verkehr2.png", NEUBAU: "12_Gleiskennzeichnungen/Verkehr2_N.png", RUECKBAU: "12_Gleiskennzeichnungen/Verkehr2_R.png" }, widthCM: 0.75, heightCM: 0.2 },
+                Verkehr4: {
+                    type: "image",
+                    src: "12_Gleiskennzeichnungen/Verkehr4.png",
+                    phaseSrc: {
+                        IST: "12_Gleiskennzeichnungen/Verkehr4.png",
+                        NEUBAU: "12_Gleiskennzeichnungen/Verkehr4_N.png",
+                        RUECKBAU: "12_Gleiskennzeichnungen/Verkehr4_R.png"
+                    },
+                    widthCM: 0.75,
+                    heightCM: 0.2
+                },
 
-        Verkehr3: { type: "image", src: "12_Gleiskennzeichnungen/Verkehr3.png", phaseSrc: { IST: "12_Gleiskennzeichnungen/Verkehr3.png", NEUBAU: "12_Gleiskennzeichnungen/Verkehr3_N.png", RUECKBAU: "12_Gleiskennzeichnungen/Verkehr3_R.png" }, widthCM: 0.75, heightCM: 0.2 },
+                Verkehr5: {
+                    type: "image",
+                    src: "12_Gleiskennzeichnungen/Verkehr5.png",
+                    phaseSrc: {
+                        IST: "12_Gleiskennzeichnungen/Verkehr5.png",
+                        NEUBAU: "12_Gleiskennzeichnungen/Verkehr5_N.png",
+                        RUECKBAU: "12_Gleiskennzeichnungen/Verkehr5_R.png"
+                    },
+                    widthCM: 0.75,
+                    heightCM: 0.2
+                },
 
-        Verkehr4: { type: "image", src: "12_Gleiskennzeichnungen/Verkehr4.png", phaseSrc: { IST: "12_Gleiskennzeichnungen/Verkehr4.png", NEUBAU: "12_Gleiskennzeichnungen/Verkehr4_N.png", RUECKBAU: "12_Gleiskennzeichnungen/Verkehr4_R.png" }, widthCM: 0.75, heightCM: 0.2 },
+                Verkehr6: {
+                    type: "image",
+                    src: "12_Gleiskennzeichnungen/Verkehr6.png",
+                    phaseSrc: {
+                        IST: "12_Gleiskennzeichnungen/Verkehr6.png",
+                        NEUBAU: "12_Gleiskennzeichnungen/Verkehr6_N.png",
+                        RUECKBAU: "12_Gleiskennzeichnungen/Verkehr6_R.png"
+                    },
+                    widthCM: 0.75,
+                    heightCM: 0.2
+                },
 
-        Verkehr5: { type: "image", src: "12_Gleiskennzeichnungen/Verkehr5.png", phaseSrc: { IST: "12_Gleiskennzeichnungen/Verkehr5.png", NEUBAU: "12_Gleiskennzeichnungen/Verkehr5_N.png", RUECKBAU: "12_Gleiskennzeichnungen/Verkehr5_R.png" }, widthCM: 0.75, heightCM: 0.2 },
+                Verkehr7: {
+                    type: "image",
+                    src: "12_Gleiskennzeichnungen/Verkehr7.png",
+                    phaseSrc: {
+                        IST: "12_Gleiskennzeichnungen/Verkehr7.png",
+                        NEUBAU: "12_Gleiskennzeichnungen/Verkehr7_N.png",
+                        RUECKBAU: "12_Gleiskennzeichnungen/Verkehr7_R.png"
+                    },
+                    widthCM: 0.75,
+                    heightCM: 0.2
+                },
 
-        Verkehr6: { type: "image", src: "12_Gleiskennzeichnungen/Verkehr6.png", phaseSrc: { IST: "12_Gleiskennzeichnungen/Verkehr6.png", NEUBAU: "12_Gleiskennzeichnungen/Verkehr6_N.png", RUECKBAU: "12_Gleiskennzeichnungen/Verkehr6_R.png" }, widthCM: 0.75, heightCM: 0.2 },
+                Verkehr8: {
+                    type: "image",
+                    src: "12_Gleiskennzeichnungen/Verkehr8.png",
+                    phaseSrc: {
+                        IST: "12_Gleiskennzeichnungen/Verkehr8.png",
+                        NEUBAU: "12_Gleiskennzeichnungen/Verkehr8_N.png",
+                        RUECKBAU: "12_Gleiskennzeichnungen/Verkehr8_R.png"
+                    },
+                    widthCM: 0.75,
+                    heightCM: 0.2
+                },
+            },
+            Beschriftung: {
+                BfGl: {
+                    type: "text",
+                    variant: "box",
+                    label: "BfGl",
+                    defaultText: "11",
+                    widthCM: 0.125,
+                    heightCM: 0.1,
+                    noBorder: true,
+                },
 
-        Verkehr7: { type: "image", src: "12_Gleiskennzeichnungen/Verkehr7.png", phaseSrc: { IST: "12_Gleiskennzeichnungen/Verkehr7.png", NEUBAU: "12_Gleiskennzeichnungen/Verkehr7_N.png", RUECKBAU: "12_Gleiskennzeichnungen/Verkehr7_R.png" }, widthCM: 0.75, heightCM: 0.2 },
+                StrGl: {
+                    type: "text",
+                    variant: "box",
+                    label: "StrGl",
+                    defaultText: "()",
+                    widthCM: 0.125,
+                    heightCM: 0.1,
+                    noBorder: true,
+                },
+                GlAbschnitt: {
+                    type: "text",
+                    variant: "plain",
+                    label: "GlAbschnitt",
+                    defaultText: "111",
+                    widthCM: 0.125,
+                    heightCM: 0.1,
+                    noBorder: true,
+                },
 
-        Verkehr8: { type: "image", src: "12_Gleiskennzeichnungen/Verkehr8.png", phaseSrc: { IST: "12_Gleiskennzeichnungen/Verkehr8.png", NEUBAU: "12_Gleiskennzeichnungen/Verkehr8_N.png", RUECKBAU: "12_Gleiskennzeichnungen/Verkehr8_R.png" }, widthCM: 0.75, heightCM: 0.2 },
-
-        BfGl: {
-            type: "text",
-            variant: "box",
-            label: "BfGl",
-            defaultText: "11",
-            widthCM: 0.125,
-            heightCM: 0.1,
-            noBorder: true,
+            },
         },
-
-        StrGl: {
-            type: "text",
-            variant: "box",
-            label: "StrGl",
-            defaultText: "()",
-            widthCM: 0.125,
-            heightCM: 0.1,
-            noBorder: true,
-        },
-        GlAbschnitt: {
-            type: "text",
-            variant: "plain",
-            label: "GlAbschnitt",
-            defaultText: "111",
-            widthCM: 0.125,
-            heightCM: 0.1,
-            noBorder: true,
-        },
-
-
     },
     "[13] Gleisschaltmittel,Radsensor,PZB": {
         AZK: { type: "image", src: "13_Gleisschaltmittel/AZK.png", phaseSrc: { IST: "13_Gleisschaltmittel/AZK.png", NEUBAU: "13_Gleisschaltmittel/AZK_N.png", RUECKBAU: "13_Gleisschaltmittel/AZK_R.png" }, widthCM: 0.3333, heightCM: 0.1 },
@@ -2592,6 +2795,51 @@ const ELEMENT_CATEGORIES = {
 
         GSE_GSA: { type: "image", src: "13_Gleisschaltmittel/GSE_GSA.png", phaseSrc: { IST: "13_Gleisschaltmittel/GSE_GSA.png", NEUBAU: "13_Gleisschaltmittel/GSE_GSA_N.png", RUECKBAU: "13_Gleisschaltmittel/GSE_GSA_R.png" }, widthCM: 0.333, heightCM: 0.1 },
 
+        GUE1: {
+            type: "image",
+            src: "13_Gleisschaltmittel/GUE1.png",
+            phaseSrc: {
+                IST: "13_Gleisschaltmittel/GUE1.png",
+                NEUBAU: "13_Gleisschaltmittel/GUE1_N.png",
+                RUECKBAU: "13_Gleisschaltmittel/GUE1_R.png"
+            },
+            widthCM: 0.333,
+            heightCM: 0.1
+        },
+        GUE2: {
+            type: "image",
+            src: "13_Gleisschaltmittel/GUE2.png",
+            phaseSrc: {
+                IST: "13_Gleisschaltmittel/GUE2.png",
+                NEUBAU: "13_Gleisschaltmittel/GUE2_N.png",
+                RUECKBAU: "13_Gleisschaltmittel/GUE2_R.png"
+            },
+            widthCM: 0.333,
+            heightCM: 0.1
+        },
+        GUE3: {
+            type: "image",
+            src: "13_Gleisschaltmittel/GUE3.png",
+            phaseSrc: {
+                IST: "13_Gleisschaltmittel/GUE3.png",
+                NEUBAU: "13_Gleisschaltmittel/GUE3_N.png",
+                RUECKBAU: "13_Gleisschaltmittel/GUE3_R.png"
+            },
+            widthCM: 0.333,
+            heightCM: 0.1
+        },
+        GUE4: {
+            type: "image",
+            src: "13_Gleisschaltmittel/GUE4.png",
+            phaseSrc: {
+                IST: "13_Gleisschaltmittel/GUE4.png",
+                NEUBAU: "13_Gleisschaltmittel/GUE4_N.png",
+                RUECKBAU: "13_Gleisschaltmittel/GUE4_R.png"
+            },
+            widthCM: 0.333,
+            heightCM: 0.1
+        },
+
 
 
     },
@@ -2616,6 +2864,50 @@ const ELEMENT_CATEGORIES = {
         Weichenantrieb: { type: "image", src: "15_Kabellage/Weichenantrieb.png", phaseSrc: { IST: "15_Kabellage/Weichenantrieb.png", NEUBAU: "15_Kabellage/Weichenantrieb_N.png", RUECKBAU: "15_Kabellage/Weichenantrieb_R.png" }, widthCM: 0.25, heightCM: 0.2 },
     },
     "[16] betriebliche Gefahrmeldeanlagen": {
+        HOA: {
+            type: "image",
+            src: "16_BetrieblicheGefahrenmeldeanlagen/HOA.png",
+            phaseSrc: {
+                IST: "16_BetrieblicheGefahrenmeldeanlagen/HOA.png",
+                NEUBAU: "16_BetrieblicheGefahrenmeldeanlagen/HOA_N.png",
+                RUECKBAU: "16_BetrieblicheGefahrenmeldeanlagen/HOA_R.png",
+            },
+            widthCM: 0.5,
+            heightCM: 0.2,
+        },
+        Windmeldeanlage: {
+            type: "image",
+            src: "16_BetrieblicheGefahrenmeldeanlagen/Windmeldeanlage.png",
+            phaseSrc: {
+                IST: "16_BetrieblicheGefahrenmeldeanlagen/Windmeldeanlage.png",
+                NEUBAU: "16_BetrieblicheGefahrenmeldeanlagen/Windmeldeanlage_N.png",
+                RUECKBAU: "16_BetrieblicheGefahrenmeldeanlagen/Windmeldeanlage_R.png",
+            },
+            widthCM: 0.5,
+            heightCM: 0.2,
+        },
+        Luftstroemmeldeanlage: {
+            type: "image",
+            src: "16_BetrieblicheGefahrenmeldeanlagen/Luftstroemmeldeanlage.png",
+            phaseSrc: {
+                IST: "16_BetrieblicheGefahrenmeldeanlagen/Luftstroemmeldeanlage.png",
+                NEUBAU: "16_BetrieblicheGefahrenmeldeanlagen/Luftstroemmeldeanlage_N.png",
+                RUECKBAU: "16_BetrieblicheGefahrenmeldeanlagen/Luftstroemmeldeanlage_R.png",
+            },
+            widthCM: 0.5,
+            heightCM: 0.2,
+        },
+        Flachstellenortungsanlage: {
+            type: "image",
+            src: "16_BetrieblicheGefahrenmeldeanlagen/Flachstellenortungsanlage.png",
+            phaseSrc: {
+                IST: "16_BetrieblicheGefahrenmeldeanlagen/Flachstellenortungsanlage.png",
+                NEUBAU: "16_BetrieblicheGefahrenmeldeanlagen/Flachstellenortungsanlage_N.png",
+                RUECKBAU: "16_BetrieblicheGefahrenmeldeanlagen/Flachstellenortungsanlage_R.png",
+            },
+            widthCM: 0.5,
+            heightCM: 0.2,
+        },
 
     },
     "[17] LZB": {
