@@ -200,13 +200,14 @@ header {
 .header-section #export-panel,
 .header-section #plan-panel,
 .header-section #titleblock-panel,
-.header-section #asset-panel,
-.header-section #help-panel,
 .header-section .paper-controls {
     display: grid;
     grid-auto-flow: column;
+    /* erst Spalte 1 füllen, dann nächste */
     grid-template-rows: repeat(4, auto);
+    /* max. 4 Elemente untereinander */
     grid-auto-columns: minmax(var(--group-col-min), 1fr);
+    /* darf schrumpfen */
     gap: var(--control-gap-row) var(--control-gap-col);
     align-content: start;
     width: 100%;
@@ -1179,12 +1180,11 @@ button:has(#scale-status.green) {
 /* Breite der Buttons in diesen Gruppen vereinheitlichen */
 .header-bottom .header-section .move-controls button,
 .header-bottom .header-section .mode-controls button,
-.header-bottom .header-section #export-panel > *,
-.header-bottom .header-section #titleblock-panel > button,
-.header-bottom .header-section .view-controls > button,
-.header-bottom .header-section .paper-controls > *,
-.header-bottom .header-section #help-panel > button {
-    width: 100% !important;
+.header-bottom .header-section #export-panel>*,
+.header-bottom .header-section #titleblock-panel>button,
+.header-bottom .header-section .view-controls>button,
+.header-bottom .header-section .paper-controls>* {
+    width: var(--btnw);
 }
 
 
@@ -1650,98 +1650,4 @@ button:has(#scale-status.green) {
 .segment input[type="checkbox"],
 .line-visibility input[type="checkbox"] {
     accent-color: #000;
-}
-
-/* =========================================================
-   🆘 15. HILFE-MODAL
-============================================================ */
-#help-panel {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 4px;
-    width: 100%;
-}
-
-#help-panel > button {
-    width: var(--btnw);
-    height: 26px;
-    padding: 5px 8px;
-    margin: 0;
-}
-
-#help-modal {
-    position: fixed;
-    inset: 0;
-    display: none;
-    align-items: center;
-    justify-content: center;
-    background: rgba(0, 0, 0, .35);
-    z-index: 1001;
-}
-
-#help-dialog {
-    background: #fff;
-    width: min(980px, 96vw);
-    height: min(82vh, 900px);
-    border-radius: 5px;
-    padding: 16px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, .2);
-    border: 1px solid #e6e6e6;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.help-head {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 12px;
-}
-
-.help-head h3 {
-    margin: 0;
-}
-
-#help-close {
-    width: 32px;
-    height: 32px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background: #f7f7f7;
-    cursor: pointer;
-}
-
-#help-close:hover,
-#help-open-tab:hover {
-    background: #000;
-    color: #fff;
-    border-color: #000;
-}
-
-.help-toolbar {
-    display: flex;
-    justify-content: flex-end;
-}
-
-#help-open-tab {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 6px 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background: #f7f7f7;
-    color: #333;
-    text-decoration: none;
-    font-size: 12px;
-}
-
-#help-frame {
-    width: 100%;
-    flex: 1 1 auto;
-    border: 1px solid #d9d9d9;
-    border-radius: 5px;
-    background: #fff;
 }

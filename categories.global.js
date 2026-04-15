@@ -74,33 +74,33 @@ const ELEMENT_CATEGORIES = {
             Gleissperren: {
                 GSP_1: {
                     type: "image",
-                    src: "GSP/GSP_1.png",
+                    src: "3_Weichen/GSP/GSP_1.png",
                     phaseSrc: {
-                        IST: "GSP/GSP_1.png",
-                        NEUBAU: "GSP/GSP_1_N.png",
-                        RUECKBAU: "GSP/GSP_1_R.png"
+                        IST: "3_Weichen/GSP/GSP_1.png",
+                        NEUBAU: "3_Weichen/GSP/GSP_1_N.png",
+                        RUECKBAU: "3_Weichen/GSP/GSP_1_R.png"
                     },
                     widthCM: 0.5,
                     heightCM: 0.6,
                 },
                 GSP_2: {
                     type: "image",
-                    src: "GSP/GSP_2.png",
+                    src: "3_Weichen/GSP/GSP_2.png",
                     phaseSrc: {
-                        IST: "GSP/GSP_2.png",
-                        NEUBAU: "GSP/GSP_2_N.png",
-                        RUECKBAU: "GSP/GSP_2_R.png"
+                        IST: "3_Weichen/GSP/GSP_2.png",
+                        NEUBAU: "3_Weichen/GSP/GSP_2_N.png",
+                        RUECKBAU: "3_Weichen/GSP/GSP_2_R.png"
                     },
                     widthCM: 0.5,
                     heightCM: 0.6,
                 },
                 GSP_3: {
                     type: "image",
-                    src: "GSP/GSP_3.png",
+                    src: "3_Weichen/GSP/GSP_3.png",
                     phaseSrc: {
-                        IST: "GSP/GSP_3.png",
-                        NEUBAU: "GSP/GSP_3_N.png",
-                        RUECKBAU: "GSP/GSP_3_R.png"
+                        IST: "3_Weichen/GSP/GSP_3.png",
+                        NEUBAU: "3_Weichen/GSP/GSP_3_N.png",
+                        RUECKBAU: "3_Weichen/GSP/GSP_3_R.png"
                     },
                     widthCM: 0.5,
                     heightCM: 0.6,
@@ -109,9 +109,9 @@ const ELEMENT_CATEGORIES = {
                     type: "image",
                     src: "GSP/GSP_4.png",
                     phaseSrc: {
-                        IST: "GSP/GSP_4.png",
-                        NEUBAU: "GSP/GSP_4_N.png",
-                        RUECKBAU: "GSP/GSP_4_R.png"
+                        IST: "3_Weichen/GSP/GSP_4.png",
+                        NEUBAU: "3_Weichen/GSP/GSP_4_N.png",
+                        RUECKBAU: "3_Weichen/GSP/GSP_4_R.png"
                     },
                     widthCM: 0.5,
                     heightCM: 0.6,
@@ -120,354 +120,355 @@ const ELEMENT_CATEGORIES = {
             EW: {
                 weiche_1: {
                     type: "image",
-                    src: "Weichen/W1.png",
+                    src: "3_Weichen/EW/W1.png",
                     phaseSrc: {
-                        IST: "Weichen/W1.png",
-                        NEUBAU: "Weichen/W1_N.png",
-                        RUECKBAU: "Weichen/W1_R.png"
+                        IST: "3_Weichen/EW/W1.png",
+                        NEUBAU: "3_Weichen/EW/W1_N.png",
+                        RUECKBAU: "3_Weichen/EW/W1_R.png"
                     },
                     widthCM: 0.5,
                     heightCM: 0.7,
                 },
                 weiche_2: {
                     type: "image",
-                    src: "Weichen/W2.png",
+                    src: "3_Weichen/EW/W2.png",
                     phaseSrc: {
-                        IST: "Weichen/W2.png",
-                        NEUBAU: "Weichen/W2_N.png",
-                        RUECKBAU: "Weichen/W2_R.png"
+                        IST: "3_Weichen/EW/W2.png",
+                        NEUBAU: "3_Weichen/EW/W2_N.png",
+                        RUECKBAU: "3_Weichen/EW/W2_R.png"
                     },
                     widthCM: 0.5,
                     heightCM: 0.7,
                 },
                 weiche_3: {
                     type: "image",
-                    src: "Weichen/W3.png",
+                    src: "3_Weichen/EW/W3.png",
                     phaseSrc: {
-                        IST: "Weichen/W3.png",
-                        NEUBAU: "Weichen/W3_N.png",
-                        RUECKBAU: "Weichen/W3_R.png"
+                        IST: "3_Weichen/EW/W3.png",
+                        NEUBAU: "3_Weichen/EW/W3_N.png",
+                        RUECKBAU: "3_Weichen/EW/W3_R.png"
                     },
                     widthCM: 0.5,
                     heightCM: 0.7,
                 },
                 weiche_4: {
                     type: "image",
-                    src: "Weichen/W4.png",
+                    src: "3_Weichen/EW/W4.png",
                     phaseSrc: {
-                        IST: "Weichen/W4.png",
-                        NEUBAU: "Weichen/W4_N.png",
-                        RUECKBAU: "Weichen/W4_R.png"
+                        IST: "3_Weichen/EW/W4.png",
+                        NEUBAU: "3_Weichen/EW/W4_N.png",
+                        RUECKBAU: "3_Weichen/EW/W4_R.png"
                     },
                     widthCM: 0.5,
                     heightCM: 0.7,
                 },
                 weiche_5: {
                     type: "image",
-                    src: "Weichen/W5.png",
+                    src: "3_Weichen/EW/W5.png",
                     phaseSrc: {
-                        IST: "Weichen/W5.png",
-                        NEUBAU: "Weichen/W5_N.png",
-                        RUECKBAU: "Weichen/W5_R.png"
+                        IST: "3_Weichen/EW/W5.png",
+                        NEUBAU: "3_Weichen/EW/W5_N.png",
+                        RUECKBAU: "3_Weichen/EW/W5_R.png"
                     },
                     widthCM: 0.5,
                     heightCM: 0.7,
                 },
                 weiche_6: {
                     type: "image",
-                    src: "Weichen/W6.png",
+                    src: "3_Weichen/EW/W6.png",
                     phaseSrc: {
-                        IST: "Weichen/W6.png",
-                        NEUBAU: "Weichen/W6_N.png",
-                        RUECKBAU: "Weichen/W6_R.png"
+                        IST: "3_Weichen/EW/W6.png",
+                        NEUBAU: "3_Weichen/EW/W6_N.png",
+                        RUECKBAU: "3_Weichen/EW/W6_R.png"
                     },
                     widthCM: 0.5,
                     heightCM: 0.7,
                 },
                 weiche_7: {
                     type: "image",
-                    src: "Weichen/W7.png",
+                    src: "3_Weichen/EW/W7.png",
                     phaseSrc: {
-                        IST: "Weichen/W7.png",
-                        NEUBAU: "Weichen/W7_N.png",
-                        RUECKBAU: "Weichen/W7_R.png"
+                        IST: "3_Weichen/EW/W7.png",
+                        NEUBAU: "3_Weichen/EW/W7_N.png",
+                        RUECKBAU: "3_Weichen/EW/W7_R.png"
                     },
                     widthCM: 0.5,
                     heightCM: 0.7,
                 },
                 weiche_8: {
                     type: "image",
-                    src: "Weichen/W8.png",
+                    src: "3_Weichen/EW/W8.png",
                     phaseSrc: {
-                        IST: "Weichen/W8.png",
-                        NEUBAU: "Weichen/W8_N.png",
-                        RUECKBAU: "Weichen/W8_R.png"
+                        IST: "3_Weichen/EW/W8.png",
+                        NEUBAU: "3_Weichen/EW/W8_N.png",
+                        RUECKBAU: "3_Weichen/EW/W8_R.png"
                     },
                     widthCM: 0.5,
                     heightCM: 0.7,
                 },
                 weiche_9: {
                     type: "image",
-                    src: "Weichen/W9.png",
+                    src: "3_Weichen/EW/W9.png",
                     phaseSrc: {
-                        IST: "Weichen/W9.png",
-                        NEUBAU: "Weichen/W9_N.png",
-                        RUECKBAU: "Weichen/W9_R.png"
+                        IST: "3_Weichen/EW/W9.png",
+                        NEUBAU: "3_Weichen/EW/W9_N.png",
+                        RUECKBAU: "3_Weichen/EW/W9_R.png"
                     },
                     widthCM: 0.5,
                     heightCM: 0.7,
                 },
                 weiche_10: {
                     type: "image",
-                    src: "Weichen/W10.png",
+                    src: "3_Weichen/EW/W10.png",
                     phaseSrc: {
-                        IST: "Weichen/W10.png",
-                        NEUBAU: "Weichen/W10_N.png",
-                        RUECKBAU: "Weichen/W10_R.png"
+                        IST: "3_Weichen/EW/W10.png",
+                        NEUBAU: "3_Weichen/EW/W10_N.png",
+                        RUECKBAU: "3_Weichen/EW/W10_R.png"
                     },
                     widthCM: 0.5,
                     heightCM: 0.7,
                 },
                 weiche_11: {
                     type: "image",
-                    src: "Weichen/W11.png",
+                    src: "3_Weichen/EW/W11.png",
                     phaseSrc: {
-                        IST: "Weichen/W11.png",
-                        NEUBAU: "Weichen/W11_N.png",
-                        RUECKBAU: "Weichen/W11_R.png"
+                        IST: "3_Weichen/EW/W11.png",
+                        NEUBAU: "3_Weichen/EW/W11_N.png",
+                        RUECKBAU: "3_Weichen/EW/W11_R.png"
                     },
                     widthCM: 0.5,
                     heightCM: 0.7,
                 },
                 weiche_12: {
                     type: "image",
-                    src: "Weichen/W12.png",
+                    src: "3_Weichen/EW/W12.png",
                     phaseSrc: {
-                        IST: "Weichen/W12.png",
-                        NEUBAU: "Weichen/W12_N.png",
-                        RUECKBAU: "Weichen/W12_R.png"
+                        IST: "3_Weichen/EW/W12.png",
+                        NEUBAU: "3_Weichen/EW/W12_N.png",
+                        RUECKBAU: "3_Weichen/EW/W12_R.png"
                     },
                     widthCM: 0.5,
                     heightCM: 0.7,
                 },
                 weiche_13: {
                     type: "image",
-                    src: "Weichen/W13.png",
+                    src: "3_Weichen/EW/W13.png",
                     phaseSrc: {
-                        IST: "Weichen/W13.png",
-                        NEUBAU: "Weichen/W13_N.png",
-                        RUECKBAU: "Weichen/W13_R.png"
+                        IST: "3_Weichen/EW/W13.png",
+                        NEUBAU: "3_Weichen/EW/W13_N.png",
+                        RUECKBAU: "3_Weichen/EW/W13_R.png"
                     },
                     widthCM: 0.5,
                     heightCM: 0.7,
                 },
                 weiche_14: {
                     type: "image",
-                    src: "Weichen/W14.png",
+                    src: "3_Weichen/EW/W14.png",
                     phaseSrc: {
-                        IST: "Weichen/W14.png",
-                        NEUBAU: "Weichen/W14_N.png",
-                        RUECKBAU: "Weichen/W14_R.png"
+                        IST: "3_Weichen/EW/W14.png",
+                        NEUBAU: "3_Weichen/EW/W14_N.png",
+                        RUECKBAU: "3_Weichen/EW/W14_R.png"
                     },
                     widthCM: 0.5,
                     heightCM: 0.7,
                 },
                 weiche_15: {
                     type: "image",
-                    src: "Weichen/W15.png",
+                    src: "3_Weichen/EW/W15.png",
                     phaseSrc: {
-                        IST: "Weichen/W15.png",
-                        NEUBAU: "Weichen/W15_N.png",
-                        RUECKBAU: "Weichen/W15_R.png"
+                        IST: "3_Weichen/EW/W15.png",
+                        NEUBAU: "3_Weichen/EW/W15_N.png",
+                        RUECKBAU: "3_Weichen/EW/W15_R.png"
                     },
                     widthCM: 0.5,
                     heightCM: 0.7,
                 },
                 weiche_16: {
                     type: "image",
-                    src: "Weichen/W16.png",
+                    src: "3_Weichen/EW/W16.png",
                     phaseSrc: {
-                        IST: "Weichen/W16.png",
-                        NEUBAU: "Weichen/W16_N.png",
-                        RUECKBAU: "Weichen/W16_R.png"
+                        IST: "3_Weichen/EW/W16.png",
+                        NEUBAU: "3_Weichen/EW/W16_N.png",
+                        RUECKBAU: "3_Weichen/EW/W16_R.png"
                     },
                     widthCM: 0.5,
                     heightCM: 0.7,
                 },
             },
+
             EWBogen: {
                 weiche_1B: {
                     type: "image",
-                    src: "Weichen/W1B.png",
+                    src: "3_Weichen/EWBogen/W1B.png",
                     phaseSrc: {
-                        IST: "Weichen/W1B.png",
-                        NEUBAU: "Weichen/W1B_N.png",
-                        RUECKBAU: "Weichen/W1B_R.png"
+                        IST: "3_Weichen/EWBogen/W1B.png",
+                        NEUBAU: "3_Weichen/EWBogen/W1B_N.png",
+                        RUECKBAU: "3_Weichen/EWBogen/W1B_R.png"
                     },
                     widthCM: 1,
                     heightCM: 0.7,
                 },
                 weiche_2B: {
                     type: "image",
-                    src: "Weichen/W2B.png",
+                    src: "3_Weichen/EWBogen/W2B.png",
                     phaseSrc: {
-                        IST: "Weichen/W2B.png",
-                        NEUBAU: "Weichen/W2B_N.png",
-                        RUECKBAU: "Weichen/W2B_R.png"
+                        IST: "3_Weichen/EWBogen/W2B.png",
+                        NEUBAU: "3_Weichen/EWBogen/W2B_N.png",
+                        RUECKBAU: "3_Weichen/EWBogen/W2B_R.png"
                     },
                     widthCM: 1,
                     heightCM: 0.7,
                 },
                 weiche_3B: {
                     type: "image",
-                    src: "Weichen/W3B.png",
+                    src: "3_Weichen/EWBogen/W3B.png",
                     phaseSrc: {
-                        IST: "Weichen/W3B.png",
-                        NEUBAU: "Weichen/W3B_N.png",
-                        RUECKBAU: "Weichen/W3B_R.png"
+                        IST: "3_Weichen/EWBogen/W3B.png",
+                        NEUBAU: "3_Weichen/EWBogen/W3B_N.png",
+                        RUECKBAU: "3_Weichen/EWBogen/W3B_R.png"
                     },
                     widthCM: 1,
                     heightCM: 0.7,
                 },
                 weiche_4B: {
                     type: "image",
-                    src: "Weichen/W4B.png",
+                    src: "3_Weichen/EWBogen/W4B.png",
                     phaseSrc: {
-                        IST: "Weichen/W4B.png",
-                        NEUBAU: "Weichen/W4B_N.png",
-                        RUECKBAU: "Weichen/W4B_R.png"
+                        IST: "3_Weichen/EWBogen/W4B.png",
+                        NEUBAU: "3_Weichen/EWBogen/W4B_N.png",
+                        RUECKBAU: "3_Weichen/EWBogen/W4B_R.png"
                     },
                     widthCM: 1,
                     heightCM: 0.7,
                 },
                 weiche_5B: {
                     type: "image",
-                    src: "Weichen/W5B.png",
+                    src: "3_Weichen/EWBogen/W5B.png",
                     phaseSrc: {
-                        IST: "Weichen/W5B.png",
-                        NEUBAU: "Weichen/W5B_N.png",
-                        RUECKBAU: "Weichen/W5B_R.png"
+                        IST: "3_Weichen/EWBogen/W5B.png",
+                        NEUBAU: "3_Weichen/EWBogen/W5B_N.png",
+                        RUECKBAU: "3_Weichen/EWBogen/W5B_R.png"
                     },
                     widthCM: 1,
                     heightCM: 0.7,
                 },
                 weiche_6B: {
                     type: "image",
-                    src: "Weichen/W6B.png",
+                    src: "3_Weichen/EWBogen/W6B.png",
                     phaseSrc: {
-                        IST: "Weichen/W6B.png",
-                        NEUBAU: "Weichen/W6B_N.png",
-                        RUECKBAU: "Weichen/W6B_R.png"
+                        IST: "3_Weichen/EWBogen/W6B.png",
+                        NEUBAU: "3_Weichen/EWBogen/W6B_N.png",
+                        RUECKBAU: "3_Weichen/EWBogen/W6B_R.png"
                     },
                     widthCM: 1,
                     heightCM: 0.7,
                 },
                 weiche_7B: {
                     type: "image",
-                    src: "Weichen/W7B.png",
+                    src: "3_Weichen/EWBogen/W7B.png",
                     phaseSrc: {
-                        IST: "Weichen/W7B.png",
-                        NEUBAU: "Weichen/W7B_N.png",
-                        RUECKBAU: "Weichen/W7B_R.png"
+                        IST: "3_Weichen/EWBogen/W7B.png",
+                        NEUBAU: "3_Weichen/EWBogen/W7B_N.png",
+                        RUECKBAU: "3_Weichen/EWBogen/W7B_R.png"
                     },
                     widthCM: 1,
                     heightCM: 0.7,
                 },
                 weiche_8B: {
                     type: "image",
-                    src: "Weichen/W8B.png",
+                    src: "3_Weichen/EWBogen/W8B.png",
                     phaseSrc: {
-                        IST: "Weichen/W8B.png",
-                        NEUBAU: "Weichen/W8B_N.png",
-                        RUECKBAU: "Weichen/W8B_R.png"
+                        IST: "3_Weichen/EWBogen/W8B.png",
+                        NEUBAU: "3_Weichen/EWBogen/W8B_N.png",
+                        RUECKBAU: "3_Weichen/EWBogen/W8B_R.png"
                     },
                     widthCM: 1,
                     heightCM: 0.7,
                 },
                 weiche_9B: {
                     type: "image",
-                    src: "Weichen/W9B.png",
+                    src: "3_Weichen/EWBogen/W9B.png",
                     phaseSrc: {
-                        IST: "Weichen/W9B.png",
-                        NEUBAU: "Weichen/W9B_N.png",
-                        RUECKBAU: "Weichen/W9B_R.png"
+                        IST: "3_Weichen/EWBogen/W9B.png",
+                        NEUBAU: "3_Weichen/EWBogen/W9B_N.png",
+                        RUECKBAU: "3_Weichen/EWBogen/W9B_R.png"
                     },
                     widthCM: 1,
                     heightCM: 0.7,
                 },
                 weiche_10B: {
                     type: "image",
-                    src: "Weichen/W10B.png",
+                    src: "3_Weichen/EWBogen/W10B.png",
                     phaseSrc: {
-                        IST: "Weichen/W10B.png",
-                        NEUBAU: "Weichen/W10B_N.png",
-                        RUECKBAU: "Weichen/W10B_R.png"
+                        IST: "3_Weichen/EWBogen/W10B.png",
+                        NEUBAU: "3_Weichen/EWBogen/W10B_N.png",
+                        RUECKBAU: "3_Weichen/EWBogen/W10B_R.png"
                     },
                     widthCM: 1,
                     heightCM: 0.7,
                 },
                 weiche_11B: {
                     type: "image",
-                    src: "Weichen/W11B.png",
+                    src: "3_Weichen/EWBogen/W11B.png",
                     phaseSrc: {
-                        IST: "Weichen/W11B.png",
-                        NEUBAU: "Weichen/W11B_N.png",
-                        RUECKBAU: "Weichen/W11B_R.png"
+                        IST: "3_Weichen/EWBogen/W11B.png",
+                        NEUBAU: "3_Weichen/EWBogen/W11B_N.png",
+                        RUECKBAU: "3_Weichen/EWBogen/W11B_R.png"
                     },
                     widthCM: 1,
                     heightCM: 0.7,
                 },
                 weiche_12B: {
                     type: "image",
-                    src: "Weichen/W12B.png",
+                    src: "3_Weichen/EWBogen/W12B.png",
                     phaseSrc: {
-                        IST: "Weichen/W12B.png",
-                        NEUBAU: "Weichen/W12B_N.png",
-                        RUECKBAU: "Weichen/W12B_R.png"
+                        IST: "3_Weichen/EWBogen/W12B.png",
+                        NEUBAU: "3_Weichen/EWBogen/W12B_N.png",
+                        RUECKBAU: "3_Weichen/EWBogen/W12B_R.png"
                     },
                     widthCM: 1,
                     heightCM: 0.7,
                 },
                 weiche_13B: {
                     type: "image",
-                    src: "Weichen/W13B.png",
+                    src: "3_Weichen/EWBogen/W13B.png",
                     phaseSrc: {
-                        IST: "Weichen/W13B.png",
-                        NEUBAU: "Weichen/W13B_N.png",
-                        RUECKBAU: "Weichen/W13B_R.png"
+                        IST: "3_Weichen/EWBogen/W13B.png",
+                        NEUBAU: "3_Weichen/EWBogen/W13B_N.png",
+                        RUECKBAU: "3_Weichen/EWBogen/W13B_R.png"
                     },
                     widthCM: 1,
                     heightCM: 0.7,
                 },
                 weiche_14B: {
                     type: "image",
-                    src: "Weichen/W14B.png",
+                    src: "3_Weichen/EWBogen/W14B.png",
                     phaseSrc: {
-                        IST: "Weichen/W14B.png",
-                        NEUBAU: "Weichen/W14B_N.png",
-                        RUECKBAU: "Weichen/W14B_R.png"
+                        IST: "3_Weichen/EWBogen/W14B.png",
+                        NEUBAU: "3_Weichen/EWBogen/W14B_N.png",
+                        RUECKBAU: "3_Weichen/EWBogen/W14B_R.png"
                     },
                     widthCM: 1,
                     heightCM: 0.7,
                 },
                 weiche_15B: {
                     type: "image",
-                    src: "Weichen/W15B.png",
+                    src: "3_Weichen/EWBogen/W15B.png",
                     phaseSrc: {
-                        IST: "Weichen/W15B.png",
-                        NEUBAU: "Weichen/W15B_N.png",
-                        RUECKBAU: "Weichen/W15B_R.png"
+                        IST: "3_Weichen/EWBogen/W15B.png",
+                        NEUBAU: "3_Weichen/EWBogen/W15B_N.png",
+                        RUECKBAU: "3_Weichen/EWBogen/W15B_R.png"
                     },
                     widthCM: 1,
                     heightCM: 0.7,
                 },
                 weiche_16B: {
                     type: "image",
-                    src: "Weichen/W16B.png",
+                    src: "3_Weichen/EWBogen/W16B.png",
                     phaseSrc: {
-                        IST: "Weichen/W16B.png",
-                        NEUBAU: "Weichen/W16B_N.png",
-                        RUECKBAU: "Weichen/W16B_R.png"
+                        IST: "3_Weichen/EWBogen/W16B.png",
+                        NEUBAU: "3_Weichen/EWBogen/W16B_N.png",
+                        RUECKBAU: "3_Weichen/EWBogen/W16B_R.png"
                     },
                     widthCM: 1,
                     heightCM: 0.7,
@@ -477,270 +478,273 @@ const ELEMENT_CATEGORIES = {
             EKW: {
                 weiche_17: {
                     type: "image",
-                    src: "Weichen/EKW1.png",
+                    src: "3_Weichen/EKW/EKW1.png",
                     phaseSrc: {
-                        IST: "Weichen/EKW1.png",
-                        NEUBAU: "Weichen/EKW1_N.png",
-                        RUECKBAU: "Weichen/EKW1_R.png"
+                        IST: "3_Weichen/EKW/EKW1.png",
+                        NEUBAU: "3_Weichen/EKW/EKW1_N.png",
+                        RUECKBAU: "3_Weichen/EKW/EKW1_R.png"
                     },
                     widthCM: 1,
                     heightCM: 1.5,
                 },
                 weiche_18: {
                     type: "image",
-                    src: "Weichen/EKW2.png",
+                    src: "3_Weichen/EKW/EKW2.png",
                     phaseSrc: {
-                        IST: "Weichen/EKW2.png",
-                        NEUBAU: "Weichen/EKW2_N.png",
-                        RUECKBAU: "Weichen/EKW2_R.png"
+                        IST: "3_Weichen/EKW/EKW2.png",
+                        NEUBAU: "3_Weichen/EKW/EKW2_N.png",
+                        RUECKBAU: "3_Weichen/EKW/EKW2_R.png"
                     },
                     widthCM: 1,
                     heightCM: 1.5,
                 },
                 weiche_19: {
                     type: "image",
-                    src: "Weichen/EKW3.png",
+                    src: "3_Weichen/EKW/EKW3.png",
                     phaseSrc: {
-                        IST: "Weichen/EKW3.png",
-                        NEUBAU: "Weichen/EKW3_N.png",
-                        RUECKBAU: "Weichen/EKW3_R.png"
+                        IST: "3_Weichen/EKW/EKW3.png",
+                        NEUBAU: "3_Weichen/EKW/EKW3_N.png",
+                        RUECKBAU: "3_Weichen/EKW/EKW3_R.png"
                     },
                     widthCM: 1,
                     heightCM: 1.5,
                 },
                 weiche_20: {
                     type: "image",
-                    src: "Weichen/EKW4.png",
+                    src: "3_Weichen/EKW/EKW4.png",
                     phaseSrc: {
-                        IST: "Weichen/EKW4.png",
-                        NEUBAU: "Weichen/EKW4_N.png",
-                        RUECKBAU: "Weichen/EKW4_R.png"
+                        IST: "3_Weichen/EKW/EKW4.png",
+                        NEUBAU: "3_Weichen/EKW/EKW4_N.png",
+                        RUECKBAU: "3_Weichen/EKW/EKW4_R.png"
                     },
                     widthCM: 1,
                     heightCM: 1.5,
                 },
                 weiche_23: {
                     type: "image",
-                    src: "Weichen/EKW5.png",
+                    src: "3_Weichen/EKW/EKW5.png",
                     phaseSrc: {
-                        IST: "Weichen/EKW5.png",
-                        NEUBAU: "Weichen/EKW5_N.png",
-                        RUECKBAU: "Weichen/EKW5_R.png"
+                        IST: "3_Weichen/EKW/EKW5.png",
+                        NEUBAU: "3_Weichen/EKW/EKW5_N.png",
+                        RUECKBAU: "3_Weichen/EKW/EKW5_R.png"
                     },
                     widthCM: 1,
                     heightCM: 1.5,
                 },
                 weiche_24: {
                     type: "image",
-                    src: "Weichen/EKW6.png",
+                    src: "3_Weichen/EKW/EKW6.png",
                     phaseSrc: {
-                        IST: "Weichen/EKW6.png",
-                        NEUBAU: "Weichen/EKW6_N.png",
-                        RUECKBAU: "Weichen/EKW6_R.png"
+                        IST: "3_Weichen/EKW/EKW6.png",
+                        NEUBAU: "3_Weichen/EKW/EKW6_N.png",
+                        RUECKBAU: "3_Weichen/EKW/EKW6_R.png"
                     },
                     widthCM: 1,
                     heightCM: 1.5,
                 },
                 weiche_25: {
                     type: "image",
-                    src: "Weichen/EKW7.png",
+                    src: "3_Weichen/EKW/EKW7.png",
                     phaseSrc: {
-                        IST: "Weichen/EKW7.png",
-                        NEUBAU: "Weichen/EKW7_N.png",
-                        RUECKBAU: "Weichen/EKW7_R.png"
+                        IST: "3_Weichen/EKW/EKW7.png",
+                        NEUBAU: "3_Weichen/EKW/EKW7_N.png",
+                        RUECKBAU: "3_Weichen/EKW/EKW7_R.png"
                     },
                     widthCM: 1,
                     heightCM: 1.5,
                 },
                 weiche_26: {
                     type: "image",
-                    src: "Weichen/EKW8.png",
+                    src: "3_Weichen/EKW/EKW8.png",
                     phaseSrc: {
-                        IST: "Weichen/EKW8.png",
-                        NEUBAU: "Weichen/EKW8_N.png",
-                        RUECKBAU: "Weichen/EKW8_R.png"
+                        IST: "3_Weichen/EKW/EKW8.png",
+                        NEUBAU: "3_Weichen/EKW/EKW8_N.png",
+                        RUECKBAU: "3_Weichen/EKW/EKW8_R.png"
                     },
                     widthCM: 1,
                     heightCM: 1.5,
                 },
             },
+
             EKWBogen: {
                 weiche_17B: {
                     type: "image",
-                    src: "Weichen/EKW1B.png",
+                    src: "3_Weichen/EKWBogen/EKW1B.png",
                     phaseSrc: {
-                        IST: "Weichen/EKW1B.png",
-                        NEUBAU: "Weichen/EKW1B_N.png",
-                        RUECKBAU: "Weichen/EKW1B_R.png"
+                        IST: "3_Weichen/EKWBogen/EKW1B.png",
+                        NEUBAU: "3_Weichen/EKWBogen/EKW1B_N.png",
+                        RUECKBAU: "3_Weichen/EKWBogen/EKW1B_R.png"
                     },
                     widthCM: 1,
                     heightCM: 1.5,
                 },
                 weiche_18B: {
                     type: "image",
-                    src: "Weichen/EKW2B.png",
+                    src: "3_Weichen/EKWBogen/EKW2B.png",
                     phaseSrc: {
-                        IST: "Weichen/EKW2B.png",
-                        NEUBAU: "Weichen/EKW2B_N.png",
-                        RUECKBAU: "Weichen/EKW2B_R.png"
+                        IST: "3_Weichen/EKWBogen/EKW2B.png",
+                        NEUBAU: "3_Weichen/EKWBogen/EKW2B_N.png",
+                        RUECKBAU: "3_Weichen/EKWBogen/EKW2B_R.png"
                     },
                     widthCM: 1,
                     heightCM: 1.5,
                 },
                 weiche_19B: {
                     type: "image",
-                    src: "Weichen/EKW3B.png",
+                    src: "3_Weichen/EKWBogen/EKW3B.png",
                     phaseSrc: {
-                        IST: "Weichen/EKW3B.png",
-                        NEUBAU: "Weichen/EKW3B_N.png",
-                        RUECKBAU: "Weichen/EKW3B_R.png"
+                        IST: "3_Weichen/EKWBogen/EKW3B.png",
+                        NEUBAU: "3_Weichen/EKWBogen/EKW3B_N.png",
+                        RUECKBAU: "3_Weichen/EKWBogen/EKW3B_R.png"
                     },
                     widthCM: 1,
                     heightCM: 1.5,
                 },
                 weiche_20B: {
                     type: "image",
-                    src: "Weichen/EKW4B.png",
+                    src: "3_Weichen/EKWBogen/EKW4B.png",
                     phaseSrc: {
-                        IST: "Weichen/EKW4B.png",
-                        NEUBAU: "Weichen/EKW4B_N.png",
-                        RUECKBAU: "Weichen/EKW4B_R.png"
+                        IST: "3_Weichen/EKWBogen/EKW4B.png",
+                        NEUBAU: "3_Weichen/EKWBogen/EKW4B_N.png",
+                        RUECKBAU: "3_Weichen/EKWBogen/EKW4B_R.png"
                     },
                     widthCM: 1,
                     heightCM: 1.5,
                 },
                 weiche_23B: {
                     type: "image",
-                    src: "Weichen/EKW5B.png",
+                    src: "3_Weichen/EKWBogen/EKW5B.png",
                     phaseSrc: {
-                        IST: "Weichen/EKW5B.png",
-                        NEUBAU: "Weichen/EKW5B_N.png",
-                        RUECKBAU: "Weichen/EKW5B_R.png"
+                        IST: "3_Weichen/EKWBogen/EKW5B.png",
+                        NEUBAU: "3_Weichen/EKWBogen/EKW5B_N.png",
+                        RUECKBAU: "3_Weichen/EKWBogen/EKW5B_R.png"
                     },
                     widthCM: 1,
                     heightCM: 1.5,
                 },
                 weiche_24B: {
                     type: "image",
-                    src: "Weichen/EKW6B.png",
+                    src: "3_Weichen/EKWBogen/EKW6B.png",
                     phaseSrc: {
-                        IST: "Weichen/EKW6B.png",
-                        NEUBAU: "Weichen/EKW6B_N.png",
-                        RUECKBAU: "Weichen/EKW6B_R.png"
+                        IST: "3_Weichen/EKWBogen/EKW6B.png",
+                        NEUBAU: "3_Weichen/EKWBogen/EKW6B_N.png",
+                        RUECKBAU: "3_Weichen/EKWBogen/EKW6B_R.png"
                     },
                     widthCM: 1,
                     heightCM: 1.5,
                 },
                 weiche_25B: {
                     type: "image",
-                    src: "Weichen/EKW7B.png",
+                    src: "3_Weichen/EKWBogen/EKW7B.png",
                     phaseSrc: {
-                        IST: "Weichen/EKW7B.png",
-                        NEUBAU: "Weichen/EKW7B_N.png",
-                        RUECKBAU: "Weichen/EKW7B_R.png"
+                        IST: "3_Weichen/EKWBogen/EKW7B.png",
+                        NEUBAU: "3_Weichen/EKWBogen/EKW7B_N.png",
+                        RUECKBAU: "3_Weichen/EKWBogen/EKW7B_R.png"
                     },
                     widthCM: 1,
                     heightCM: 1.5,
                 },
                 weiche_26B: {
                     type: "image",
-                    src: "Weichen/EKW8B.png",
+                    src: "3_Weichen/EKWBogen/EKW8B.png",
                     phaseSrc: {
-                        IST: "Weichen/EKW8B.png",
-                        NEUBAU: "Weichen/EKW8B_N.png",
-                        RUECKBAU: "Weichen/EKW8B_R.png"
+                        IST: "3_Weichen/EKWBogen/EKW8B.png",
+                        NEUBAU: "3_Weichen/EKWBogen/EKW8B_N.png",
+                        RUECKBAU: "3_Weichen/EKWBogen/EKW8B_R.png"
                     },
                     widthCM: 1,
                     heightCM: 1.5,
                 },
             },
+
             DKW: {
                 weiche_DKW1: {
                     type: "image",
-                    src: "Weichen/DKW1.png",
+                    src: "3_Weichen/DKW/DKW1.png",
                     phaseSrc: {
-                        IST: "Weichen/DKW1.png",
-                        NEUBAU: "Weichen/DKW1_N.png",
-                        RUECKBAU: "Weichen/DKW1_R.png"
+                        IST: "3_Weichen/DKW/DKW1.png",
+                        NEUBAU: "3_Weichen/DKW/DKW1_N.png",
+                        RUECKBAU: "3_Weichen/DKW/DKW1_R.png"
                     },
                     widthCM: 1,
                     heightCM: 1.5,
                 },
                 weiche_DKW2: {
                     type: "image",
-                    src: "Weichen/DKW2.png",
+                    src: "3_Weichen/DKW/DKW2.png",
                     phaseSrc: {
-                        IST: "Weichen/DKW2.png",
-                        NEUBAU: "Weichen/DKW2_N.png",
-                        RUECKBAU: "Weichen/DKW2_R.png"
+                        IST: "3_Weichen/DKW/DKW2.png",
+                        NEUBAU: "3_Weichen/DKW/DKW2_N.png",
+                        RUECKBAU: "3_Weichen/DKW/DKW2_R.png"
                     },
                     widthCM: 1,
                     heightCM: 1.5,
                 },
                 weiche_DKW3: {
                     type: "image",
-                    src: "Weichen/DKW3.png",
+                    src: "3_Weichen/DKW/DKW3.png",
                     phaseSrc: {
-                        IST: "Weichen/DKW3.png",
-                        NEUBAU: "Weichen/DKW3_N.png",
-                        RUECKBAU: "Weichen/DKW3_R.png"
+                        IST: "3_Weichen/DKW/DKW3.png",
+                        NEUBAU: "3_Weichen/DKW/DKW3_N.png",
+                        RUECKBAU: "3_Weichen/DKW/DKW3_R.png"
                     },
                     widthCM: 1,
                     heightCM: 1.5,
                 },
                 weiche_DKW4: {
                     type: "image",
-                    src: "Weichen/DKW4.png",
+                    src: "3_Weichen/DKW/DKW4.png",
                     phaseSrc: {
-                        IST: "Weichen/DKW4.png",
-                        NEUBAU: "Weichen/DKW4_N.png",
-                        RUECKBAU: "Weichen/DKW4_R.png"
+                        IST: "3_Weichen/DKW/DKW4.png",
+                        NEUBAU: "3_Weichen/DKW/DKW4_N.png",
+                        RUECKBAU: "3_Weichen/DKW/DKW4_R.png"
                     },
                     widthCM: 1,
                     heightCM: 1.5,
                 },
             },
+
             DKWBogen: {
                 weiche_DKW1B: {
                     type: "image",
-                    src: "Weichen/DKW1B.png",
+                    src: "3_Weichen/DKWBogen/DKW1B.png",
                     phaseSrc: {
-                        IST: "Weichen/DKW1B.png",
-                        NEUBAU: "Weichen/DKW1B_N.png",
-                        RUECKBAU: "Weichen/DKW1B_R.png"
+                        IST: "3_Weichen/DKWBogen/DKW1B.png",
+                        NEUBAU: "3_Weichen/DKWBogen/DKW1B_N.png",
+                        RUECKBAU: "3_Weichen/DKWBogen/DKW1B_R.png"
                     },
                     widthCM: 1,
                     heightCM: 1.5,
                 },
                 weiche_DKW2B: {
                     type: "image",
-                    src: "Weichen/DKW2B.png",
+                    src: "3_Weichen/DKWBogen/DKW2B.png",
                     phaseSrc: {
-                        IST: "Weichen/DKW2B.png",
-                        NEUBAU: "Weichen/DKW2B_N.png",
-                        RUECKBAU: "Weichen/DKW2B_R.png"
+                        IST: "3_Weichen/DKWBogen/DKW2B.png",
+                        NEUBAU: "3_Weichen/DKWBogen/DKW2B_N.png",
+                        RUECKBAU: "3_Weichen/DKWBogen/DKW2B_R.png"
                     },
                     widthCM: 1,
                     heightCM: 1.5,
                 },
                 weiche_DKW3B: {
                     type: "image",
-                    src: "Weichen/DKW3B.png",
+                    src: "3_Weichen/DKWBogen/DKW3B.png",
                     phaseSrc: {
-                        IST: "Weichen/DKW3B.png",
-                        NEUBAU: "Weichen/DKW3B_N.png",
-                        RUECKBAU: "Weichen/DKW3B_R.png"
+                        IST: "3_Weichen/DKWBogen/DKW3B.png",
+                        NEUBAU: "3_Weichen/DKWBogen/DKW3B_N.png",
+                        RUECKBAU: "3_Weichen/DKWBogen/DKW3B_R.png"
                     },
                     widthCM: 1,
                     heightCM: 1.5,
                 },
                 weiche_DKW4B: {
                     type: "image",
-                    src: "Weichen/DKW4B.png",
+                    src: "3_Weichen/DKWBogen/DKW4B.png",
                     phaseSrc: {
-                        IST: "Weichen/DKW4B.png",
-                        NEUBAU: "Weichen/DKW4B_N.png",
-                        RUECKBAU: "Weichen/DKW4B_R.png"
+                        IST: "3_Weichen/DKWBogen/DKW4B.png",
+                        NEUBAU: "3_Weichen/DKWBogen/DKW4B_N.png",
+                        RUECKBAU: "3_Weichen/DKWBogen/DKW4B_R.png"
                     },
                     widthCM: 1,
                     heightCM: 1.5,

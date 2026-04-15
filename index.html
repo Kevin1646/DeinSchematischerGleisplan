@@ -117,6 +117,14 @@
       </div>
 
 
+
+      <div class="header-section" id="help-section">
+        <h3>Hilfe</h3>
+        <div id="help-panel">
+          <button id="open-help-modal" type="button">Anleitung</button>
+        </div>
+      </div>
+
       <!-- Abschnitt: Bilder -->
       <div class="header-section" id="images-section">
         <h3>Bilder</h3>
@@ -155,6 +163,22 @@
   </div>
 
 
+
+
+
+  <!-- Modal: Hilfe -->
+  <div id="help-modal" role="dialog" aria-modal="true" aria-labelledby="help-title">
+    <div id="help-dialog">
+      <div class="help-head">
+        <h3 id="help-title">Hilfe</h3>
+        <button id="help-close" title="Schließen">✕</button>
+      </div>
+      <div class="help-toolbar">
+        <a id="help-open-tab" href="hilfe_gleisplan.pdf" target="_blank" rel="noopener">PDF in neuem Tab öffnen</a>
+      </div>
+      <iframe id="help-frame" src="hilfe_gleisplan.pdf" title="Anleitung DEIN SCHEMATISCHER GLEISPLAN"></iframe>
+    </div>
+  </div>
 
   <!-- Modal: Schriftfeld-Editor -->
   <div id="titleblock-modal" role="dialog" aria-modal="true" aria-labelledby="tb-title">
@@ -6564,6 +6588,29 @@
     tbCancel.addEventListener("click", () => tbModal.style.display = "none");
     tbModal.addEventListener("click", (e) => {
       if (e.target === tbModal) tbModal.style.display = "none"; // Klick auf Overlay
+    });
+
+    // Hilfe-Modal
+    const helpModal = document.getElementById("help-modal");
+    const helpOpenBtn = document.getElementById("open-help-modal");
+    const helpCloseBtn = document.getElementById("help-close");
+
+    helpOpenBtn?.addEventListener("click", () => {
+      if (helpModal) helpModal.style.display = "flex";
+    });
+
+    helpCloseBtn?.addEventListener("click", () => {
+      if (helpModal) helpModal.style.display = "none";
+    });
+
+    helpModal?.addEventListener("click", (e) => {
+      if (e.target === helpModal) helpModal.style.display = "none";
+    });
+
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && helpModal?.style.display === "flex") {
+        helpModal.style.display = "none";
+      }
     });
     // Modus-Buttons
     const groupAddBtn = document.getElementById("group-add-btn");
