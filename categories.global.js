@@ -122,15 +122,99 @@ const ELEMENT_CATEGORIES = {
                 },
             },
             Schlüsselsperren: {
-                Gebaude: {
+                SSP1: {
                     type: "image",
-                    src: "2_Gebaeude/Gebaeude/Gebaude.png",
+                    src: "2_Gebaeude/Schluesselsperre/SSP1.png",
                     phaseSrc: {
-                        IST: "2_Gebaeude/Gebaeude/Gebaude.png",
-                        NEUBAU: "2_Gebaeude/Gebaeude/Gebaude_N.png",
-                        RUECKBAU: "2_Gebaeude/Gebaeude/Gebaude_R.png"
+                        IST: "2_Gebaeude/Schluesselsperre/SSP1.png",
+                        NEUBAU: "2_Gebaeude/Schluesselsperre/SSP1_N.png",
+                        RUECKBAU: "2_Gebaeude/Schluesselsperre/SSP1_R.png"
                     },
-                    widthCM: 1,
+                    widthCM: 0.5,
+                    heightCM: 0.5,
+                },
+
+                SSP2: {
+                    type: "image",
+                    src: "2_Gebaeude/Schluesselsperre/SSP2.png",
+                    phaseSrc: {
+                        IST: "2_Gebaeude/Schluesselsperre/SSP2.png",
+                        NEUBAU: "2_Gebaeude/Schluesselsperre/SSP2_N.png",
+                        RUECKBAU: "2_Gebaeude/Schluesselsperre/SSP2_R.png"
+                    },
+                    widthCM: 0.5,
+                    heightCM: 0.5,
+                },
+
+                SSP3: {
+                    type: "image",
+                    src: "2_Gebaeude/Schluesselsperre/SSP3.png",
+                    phaseSrc: {
+                        IST: "2_Gebaeude/Schluesselsperre/SSP3.png",
+                        NEUBAU: "2_Gebaeude/Schluesselsperre/SSP3_N.png",
+                        RUECKBAU: "2_Gebaeude/Schluesselsperre/SSP3_R.png"
+                    },
+                    widthCM: 0.5,
+                    heightCM: 0.5,
+                },
+
+                SSP4: {
+                    type: "image",
+                    src: "2_Gebaeude/Schluesselsperre/SSP4.png",
+                    phaseSrc: {
+                        IST: "2_Gebaeude/Schluesselsperre/SSP4.png",
+                        NEUBAU: "2_Gebaeude/Schluesselsperre/SSP4_N.png",
+                        RUECKBAU: "2_Gebaeude/Schluesselsperre/SSP4_R.png"
+                    },
+                    widthCM: 0.5,
+                    heightCM: 0.5,
+                },
+
+                SSP5: {
+                    type: "image",
+                    src: "2_Gebaeude/Schluesselsperre/SSP5.png",
+                    phaseSrc: {
+                        IST: "2_Gebaeude/Schluesselsperre/SSP5.png",
+                        NEUBAU: "2_Gebaeude/Schluesselsperre/SSP5_N.png",
+                        RUECKBAU: "2_Gebaeude/Schluesselsperre/SSP5_R.png"
+                    },
+                    widthCM: 0.5,
+                    heightCM: 0.5,
+                },
+
+                SSP6: {
+                    type: "image",
+                    src: "2_Gebaeude/Schluesselsperre/SSP6.png",
+                    phaseSrc: {
+                        IST: "2_Gebaeude/Schluesselsperre/SSP6.png",
+                        NEUBAU: "2_Gebaeude/Schluesselsperre/SSP6_N.png",
+                        RUECKBAU: "2_Gebaeude/Schluesselsperre/SSP6_R.png"
+                    },
+                    widthCM: 0.5,
+                    heightCM: 0.5,
+                },
+
+                SSP7: {
+                    type: "image",
+                    src: "2_Gebaeude/Schluesselsperre/SSP7.png",
+                    phaseSrc: {
+                        IST: "2_Gebaeude/Schluesselsperre/SSP7.png",
+                        NEUBAU: "2_Gebaeude/Schluesselsperre/SSP7_N.png",
+                        RUECKBAU: "2_Gebaeude/Schluesselsperre/SSP7_R.png"
+                    },
+                    widthCM: 0.5,
+                    heightCM: 0.5,
+                },
+
+                SSP8: {
+                    type: "image",
+                    src: "2_Gebaeude/Schluesselsperre/SSP8.png",
+                    phaseSrc: {
+                        IST: "2_Gebaeude/Schluesselsperre/SSP8.png",
+                        NEUBAU: "2_Gebaeude/Schluesselsperre/SSP8_N.png",
+                        RUECKBAU: "2_Gebaeude/Schluesselsperre/SSP8_R.png"
+                    },
+                    widthCM: 0.5,
                     heightCM: 0.5,
                 },
             },
