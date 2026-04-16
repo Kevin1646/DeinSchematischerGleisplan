@@ -1547,6 +1547,55 @@
     }
 
 
+    function getRotatedLocalPoint(worldX, worldY, el) {
+      const angle = ((el.rotation || 0) * Math.PI) / 180;
+      const dx = worldX - el.x;
+      const dy = worldY - el.y;
+      return {
+        x: dx * Math.cos(-angle) - dy * Math.sin(-angle),
+        y: dx * Math.sin(-angle) + dy * Math.cos(-angle),
+      };
+    }
+
+    function getRotatedOriginFromPointer(worldX, worldY, el, localX, localY) {
+      const angle = ((el.rotation || 0) * Math.PI) / 180;
+      const offsetX = localX * Math.cos(angle) - localY * Math.sin(angle);
+      const offsetY = localX * Math.sin(angle) + localY * Math.cos(angle);
+      return {
+        x: worldX - offsetX,
+        y: worldY - offsetY,
+      };
+    }
+
+    function isPointInRotatedTopLeftRect(worldX, worldY, el, pad = 0) {
+      const local = getRotatedLocalPoint(worldX, worldY, el);
+      return (
+        local.x >= -pad &&
+        local.x <= (el.width || 0) + pad &&
+        local.y >= -pad &&
+        local.y <= (el.height || 0) + pad
+      );
+    }
+
+    function getTextResizeHandleLocal(el) {
+      return {
+        x: (el.width || 0),
+        y: (el.height || 0),
+      };
+    }
+
+    function isPointOnRotatedTextResizeHandle(worldX, worldY, el, handleSize = 8 / scale) {
+      const local = getRotatedLocalPoint(worldX, worldY, el);
+      const handle = getTextResizeHandleLocal(el);
+      return (
+        local.x >= handle.x - handleSize &&
+        local.x <= handle.x &&
+        local.y >= handle.y - handleSize &&
+        local.y <= handle.y
+      );
+    }
+
+
 
     // Zeichenstatus
     let drawingMode = false;
@@ -3610,29 +3659,37 @@
       const worldPoint = screenToWorld(e.clientX, e.clientY);
       let found = false;
 
-      // 1) Klick auf vorhandenes freies Textfeld → nur auswählen, NICHT Editor öffnen
+      // 1) Klick auf vorhandenes freies Textfeld → auswählen, ziehen oder Größe ändern
       for (let i = savedElements.length - 1; i >= 0; i--) {
         const el = savedElements[i];
         if (el.type === "text") {
-          const relX = worldPoint.x - el.x;
-          const relY = worldPoint.y - el.y;
+          const rel = getRotatedLocalPoint(worldPoint.x, worldPoint.y, el);
           if (
-            relX >= 0 &&
-            relX <= el.width &&
-            relY >= 0 &&
-            relY <= el.height
+            rel.x >= 0 &&
+            rel.x <= el.width &&
+            rel.y >= 0 &&
+            rel.y <= el.height
           ) {
             selectedElementIndex = i;
             selectedLineIndex = null;
             activeEditingGroupId = el.parentId || null;
             renderPropertiesForSelection(true);
 
-            isDragging = true;
-            dragOffset = {
-              x: Math.max(0, relX),
-              y: Math.max(0, relY),
-            };
-            canvas.style.cursor = "grabbing";
+            const handleSize = 8 / scale;
+            if (isPointOnRotatedTextResizeHandle(worldPoint.x, worldPoint.y, el, handleSize)) {
+              isResizing = true;
+              if (!pendingHistory) pendingHistory = captureState();
+              moveMode = false;
+              canvas.style.cursor = "se-resize";
+            } else {
+              isDragging = true;
+              dragOffset = {
+                x: Math.max(0, rel.x),
+                y: Math.max(0, rel.y),
+              };
+              canvas.style.cursor = "grabbing";
+            }
+
             redrawCanvas();
             return;
           }
@@ -3699,21 +3756,12 @@
           }
         } else if (el.type === "text") {
           const pad = 6 / scale;
-          const relX = worldPoint.x - el.x;
-          const relY = worldPoint.y - el.y;
-          if (
-            relX >= -pad &&
-            relX <= el.width + pad &&
-            relY >= -pad &&
-            relY <= el.height + pad
-          ) {
+          const rel = getRotatedLocalPoint(worldPoint.x, worldPoint.y, el);
+          if (isPointInRotatedTopLeftRect(worldPoint.x, worldPoint.y, el, pad)) {
             selectedElementIndex = i;
             const handleSize = 8 / scale;
             activeGroupId = el.groupId || null
-            if (
-              relX >= el.width - handleSize &&
-              relY >= el.height - handleSize
-            ) {
+            if (isPointOnRotatedTextResizeHandle(worldPoint.x, worldPoint.y, el, handleSize)) {
               isResizing = true;
               if (!pendingHistory) pendingHistory = captureState();
               moveMode = false;
@@ -3721,8 +3769,8 @@
             } else {
               isDragging = true;
               dragOffset = {
-                x: Math.max(0, relX),
-                y: Math.max(0, relY),
+                x: Math.max(0, rel.x),
+                y: Math.max(0, rel.y),
               };
               canvas.style.cursor = "grabbing";
             }
@@ -3731,23 +3779,22 @@
             break;
           }
         } else if (el.type === "text_box") {
-          const relX = worldPoint.x - el.x;
-          const relY = worldPoint.y - el.y;
+          const rel = getRotatedLocalPoint(worldPoint.x, worldPoint.y, el);
 
-          if (relX >= 0 && relX <= el.width && relY >= 0 && relY <= el.height) {
+          if (isPointInRotatedTopLeftRect(worldPoint.x, worldPoint.y, el, 0)) {
             selectedElementIndex = i;
             activeGroupId = el.groupId || null;
 
             const handleSize = 8 / scale;
-            if (relX >= el.width - handleSize && relY >= el.height - handleSize) {
+            if (isPointOnRotatedTextResizeHandle(worldPoint.x, worldPoint.y, el, handleSize)) {
               isResizing = true;
               if (!pendingHistory) pendingHistory = captureState();
               canvas.style.cursor = "se-resize";
             } else {
               isDragging = true;
               dragOffset = {
-                x: Math.max(0, relX),
-                y: Math.max(0, relY),
+                x: Math.max(0, rel.x),
+                y: Math.max(0, rel.y),
               };
               canvas.style.cursor = "grabbing";
             }
@@ -3826,15 +3873,7 @@
 
         // Freie Texte + Textfelder mit Rahmen per Doppelklick bearbeiten
         if (el.type === "text" || el.type === "text_box") {
-          const relX = worldPoint.x - el.x;
-          const relY = worldPoint.y - el.y;
-
-          if (
-            relX >= 0 &&
-            relX <= el.width &&
-            relY >= 0 &&
-            relY <= el.height
-          ) {
+          if (isPointInRotatedTopLeftRect(worldPoint.x, worldPoint.y, el, 0)) {
             clickedOnText = true;
             selectedElementIndex = i;
             selectedLineIndex = null;
@@ -4323,12 +4362,15 @@
       if (isResizing && selectedElementIndex !== null) {
         const el = savedElements[selectedElementIndex];
 
-        // Text-Resize (wie bisher)
+        // Text-Resize im lokalen, unrotierten System
         if (el.type === "text" || el.type === "text_box") {
-          const newWidth = getVerticalSnap(worldPoint.x) - el.x;
-          const newHeight = getClosestSnapY(worldPoint.y) - el.y;
-          el.width = Math.max(newWidth, 20 / scale);
-          el.height = Math.max(newHeight, 20 / scale);
+          const local = getRotatedLocalPoint(worldPoint.x, worldPoint.y, el);
+          const hSmall = hSpacing / 3;
+          const vSmall = vSpacing / 3;
+          const snappedLocalW = Math.round(local.x / hSmall) * hSmall;
+          const snappedLocalH = Math.round(local.y / vSmall) * vSmall;
+          el.width = Math.max(snappedLocalW, hSmall);
+          el.height = Math.max(snappedLocalH, vSmall);
           redrawCanvas();
           return;
         }
@@ -4448,21 +4490,29 @@
           // WICHTIG: gap bleibt konstant -> nichts ändern
           redrawCanvas();
           return;
-        } if (el.type === "text" || el.type === "text_box") {
-          const newWidth = getVerticalSnap(worldPoint.x) - el.x;
-          const newHeight = getClosestSnapY(worldPoint.y) - el.y;
-          el.width = Math.max(newWidth, 20 / scale);
-          el.height = Math.max(newHeight, 20 / scale);
-          redrawCanvas();
-          return;
         }
       }
 
 
       if (isDragging && selectedElementIndex !== null) {
         const selectedElement = savedElements[selectedElementIndex];
-        const newX = worldPoint.x - dragOffset.x;
-        const newY = worldPoint.y - dragOffset.y;
+        let newX;
+        let newY;
+
+        if (selectedElement.type === "text" || selectedElement.type === "text_box") {
+          const origin = getRotatedOriginFromPointer(
+            worldPoint.x,
+            worldPoint.y,
+            selectedElement,
+            dragOffset.x,
+            dragOffset.y
+          );
+          newX = origin.x;
+          newY = origin.y;
+        } else {
+          newX = worldPoint.x - dragOffset.x;
+          newY = worldPoint.y - dragOffset.y;
+        }
 
         const dx = newX - selectedElement.x;
         const dy = newY - selectedElement.y;
@@ -4593,14 +4643,9 @@
               onObject = true;
               break;
             }
-          } else if (el.type === "text") {
+          } else if (el.type === "text" || el.type === "text_box") {
             const pad = 6 / scale;
-            if (
-              worldPoint.x >= el.x - pad &&
-              worldPoint.x <= el.x + el.width + pad &&
-              worldPoint.y >= el.y - pad &&
-              worldPoint.y <= el.y + el.height + pad
-            ) {
+            if (isPointInRotatedTopLeftRect(worldPoint.x, worldPoint.y, el, pad)) {
               onObject = true;
               break;
             }
@@ -4919,9 +4964,11 @@
       // --- Drehen (← / →) ---
       if (!isEditingText && selectedElementIndex !== null) {
         const element = savedElements[selectedElementIndex];
+        const isTextElement = element && (element.type === "text" || element.type === "text_box");
+        const step = isTextElement ? 45 : 45;
         let angleChange = 0;
-        if (e.key === "ArrowRight") angleChange = 90;
-        else if (e.key === "ArrowLeft") angleChange = -90;
+        if (e.key === "ArrowRight") angleChange = step;
+        else if (e.key === "ArrowLeft") angleChange = -step;
         if (angleChange !== 0) {
           e.preventDefault();
           element.rotation = ((element.rotation || 0) + angleChange) % 360;

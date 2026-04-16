@@ -983,77 +983,77 @@ const ELEMENT_CATEGORIES = {
             Signalbefestigung: {
                 SignalbefestigungK: {
                     type: "image",
-                    src: "Signalbefestigung/SMK.png",
+                    src: "4_Haupt_und_Vorsignale/Signalbefestigung/SMK.png",
                     phaseSrc: {
-                        IST: "Signalbefestigung/SMK.png",
-                        NEUBAU: "Signalbefestigung/SMK_N.png",
-                        RUECKBAU: "Signalbefestigung/SMK_R.png"
+                        IST: "4_Haupt_und_Vorsignale/Signalbefestigung/SMK.png",
+                        NEUBAU: "4_Haupt_und_Vorsignale/Signalbefestigung/SMK_N.png",
+                        RUECKBAU: "4_Haupt_und_Vorsignale/Signalbefestigung/SMK_R.png"
                     },
                     widthCM: 0.25,
                     heightCM: 0.2,
                 },
                 SignalbefestigungM: {
                     type: "image",
-                    src: "Signalbefestigung/SMM.png",
+                    src: "4_Haupt_und_Vorsignale/Signalbefestigung/SMM.png",
                     phaseSrc: {
-                        IST: "Signalbefestigung/SMM.png",
-                        NEUBAU: "Signalbefestigung/SMM_N.png",
-                        RUECKBAU: "Signalbefestigung/SMM_R.png"
+                        IST: "4_Haupt_und_Vorsignale/Signalbefestigung/SMM.png",
+                        NEUBAU: "4_Haupt_und_Vorsignale/Signalbefestigung/SMM_N.png",
+                        RUECKBAU: "4_Haupt_und_Vorsignale/Signalbefestigung/SMM_R.png"
                     },
                     widthCM: 0.5,
                     heightCM: 0.2,
                 },
                 SignalbefestigungL: {
                     type: "image",
-                    src: "Signalbefestigung/SML.png",
+                    src: "4_Haupt_und_Vorsignale/Signalbefestigung/SML.png",
                     phaseSrc: {
-                        IST: "Signalbefestigung/SML.png",
-                        NEUBAU: "Signalbefestigung/SML_N.png",
-                        RUECKBAU: "Signalbefestigung/SML_R.png"
+                        IST: "4_Haupt_und_Vorsignale/Signalbefestigung/SML.png",
+                        NEUBAU: "4_Haupt_und_Vorsignale/Signalbefestigung/SML_N.png",
+                        RUECKBAU: "4_Haupt_und_Vorsignale/Signalbefestigung/SML_R.png"
                     },
                     widthCM: 0.75,
                     heightCM: 0.2,
                 },
                 SignalbefestigungTL: {
                     type: "image",
-                    src: "Signalbefestigung/SMTL.png",
+                    src: "4_Haupt_und_Vorsignale/Signalbefestigung/SMTL.png",
                     phaseSrc: {
-                        IST: "Signalbefestigung/SMTL.png",
-                        NEUBAU: "Signalbefestigung/SMTL_N.png",
-                        RUECKBAU: "Signalbefestigung/SMTL_R.png"
+                        IST: "4_Haupt_und_Vorsignale/Signalbefestigung/SMTL.png",
+                        NEUBAU: "4_Haupt_und_Vorsignale/Signalbefestigung/SMTL_N.png",
+                        RUECKBAU: "4_Haupt_und_Vorsignale/Signalbefestigung/SMTL_R.png"
                     },
                     widthCM: 0.25,
                     heightCM: 0.1,
                 },
                 SignalbefestigungTR: {
                     type: "image",
-                    src: "Signalbefestigung/SMTR.png",
+                    src: "4_Haupt_und_Vorsignale/Signalbefestigung/SMTR.png",
                     phaseSrc: {
-                        IST: "Signalbefestigung/SMTR.png",
-                        NEUBAU: "Signalbefestigung/SMTR_N.png",
-                        RUECKBAU: "Signalbefestigung/SMTR_R.png"
+                        IST: "4_Haupt_und_Vorsignale/Signalbefestigung/SMTR.png",
+                        NEUBAU: "4_Haupt_und_Vorsignale/Signalbefestigung/SMTR_N.png",
+                        RUECKBAU: "4_Haupt_und_Vorsignale/Signalbefestigung/SMTR_R.png"
                     },
                     widthCM: 0.25,
                     heightCM: 0.1,
                 },
                 SignalbefestigungKW1: {
                     type: "image",
-                    src: "Signalbefestigung/SMKW1.png",
+                    src: "4_Haupt_und_Vorsignale/Signalbefestigung/SMKW1.png",
                     phaseSrc: {
-                        IST: "Signalbefestigung/SMKW1.png",
-                        NEUBAU: "Signalbefestigung/SMKW1_N.png",
-                        RUECKBAU: "Signalbefestigung/SMKW1_R.png"
+                        IST: "4_Haupt_und_Vorsignale/Signalbefestigung/SMKW1.png",
+                        NEUBAU: "4_Haupt_und_Vorsignale/Signalbefestigung/SMKW1_N.png",
+                        RUECKBAU: "4_Haupt_und_Vorsignale/Signalbefestigung/SMKW1_R.png"
                     },
                     widthCM: 0.25,
                     heightCM: 0.1,
                 },
                 SignalbefestigungKW2: {
                     type: "image",
-                    src: "Signalbefestigung/SMKW2.png",
+                    src: "4_Haupt_und_Vorsignale/Signalbefestigung/SMKW2.png",
                     phaseSrc: {
-                        IST: "Signalbefestigung/SMKW2.png",
-                        NEUBAU: "Signalbefestigung/SMKW2_N.png",
-                        RUECKBAU: "Signalbefestigung/SMKW2_R.png"
+                        IST: "4_Haupt_und_Vorsignale/Signalbefestigung/SMKW2.png",
+                        NEUBAU: "4_Haupt_und_Vorsignale/Signalbefestigung/SMKW2_N.png",
+                        RUECKBAU: "4_Haupt_und_Vorsignale/Signalbefestigung/SMKW2_R.png"
                     },
                     widthCM: 0.25,
                     heightCM: 0.1,
@@ -2544,7 +2544,7 @@ const ELEMENT_CATEGORIES = {
     "[12] Gleiskennzeichnungen": {
         type: "nested",
         subcategories: {
-            elek_Ende: {
+            Elektrifizierung: {
                 E_Ende: {
                     type: "image",
                     src: "12_Gleiskennzeichnungen/E_Ende.png",
